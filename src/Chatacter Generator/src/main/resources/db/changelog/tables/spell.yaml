@@ -1,0 +1,61 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-spell-table
+      author: Thomas Gielen
+      changes:
+        - createTable:
+            tableName: spell
+            columns:
+              - column:
+                  name: id
+                  type: varchar(36)
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: school
+                  type: varchar(50)
+              - column:
+                  name: level
+                  type: varchar(50)
+              - column:
+                  name: spell_range
+                  type: varchar(100)
+              - column:
+                  name: casting_time
+                  type: varchar(100)
+              - column:
+                  name: duration
+                  type: varchar(100)
+              - column:
+                  name: description
+                  type: text
+              - column:
+                  name: higher_levels
+                  type: text
+
+  - changeSet:
+      id: create-spell-components
+      author: Thomas Gielen
+      changes:
+        - createTable:
+            tableName: spell_components
+            columns:
+              - column:
+                  name: spell_id
+                  type: varchar(36)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: components
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: spell_components
+            baseColumnNames: spell_id
+            referencedTableName: spell
+            referencedColumnNames: id
+            constraintName: fk_spell_components_spell

@@ -1,0 +1,256 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "D&D Character Generator",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [],
+  "paths": {
+    "/spells": {
+      "get": {
+        "summary": "GetSpells",
+        "deprecated": false,
+        "description": "fetches all the spells",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SpellResponse"
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "CreateSpell",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SpellRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [
+                    "01JTAXD6VFXDE9E4THNVVSEG1A"
+                  ]
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/spells/{id}": {
+      "get": {
+        "summary": "GetSpell",
+        "deprecated": false,
+        "description": "fetches the spell",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpellResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SpellResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "level": {
+            "type": "string",
+            "description": "casting level"
+          },
+          "school": {
+            "type": "string",
+            "description": "school",
+            "enum": [
+              "ABJURATION",
+              "CONJURATION",
+              "DIVINATION",
+              "ENCHANTMENT",
+              "EVOCATION",
+              "ILLUSION",
+              "NECROMANCY",
+              "TRANSMUTATION"
+            ]
+          },
+          "castingTime": {
+            "type": "string",
+            "description": "casting time"
+          },
+          "spellRange": {
+            "type": "string",
+            "description": "range"
+          },
+          "duration": {
+            "type": "string",
+            "description": "duration"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "VERBAL",
+                "SOMATIC",
+                "MATERIAL"
+              ]
+            },
+            "description": "components"
+          },
+          "higherLevels": {
+            "type": "string",
+            "description": "description of what the spell does when cast at higher levels"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "school",
+          "level",
+          "spellRange",
+          "castingTime",
+          "duration",
+          "description",
+          "components",
+          "higherLevels"
+        ]
+      },
+      "SpellRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "level": {
+            "type": "string",
+            "description": "casting level"
+          },
+          "school": {
+            "type": "string",
+            "description": "school",
+            "enum": [
+              "ABJURATION",
+              "CONJURATION",
+              "DIVINATION",
+              "ENCHANTMENT",
+              "EVOCATION",
+              "ILLUSION",
+              "NECROMANCY",
+              "TRANSMUTATION"
+            ]
+          },
+          "castingTime": {
+            "type": "string",
+            "description": "casting time"
+          },
+          "spellRange": {
+            "type": "string",
+            "description": "range"
+          },
+          "duration": {
+            "type": "string",
+            "description": "duration"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "VERBAL",
+                "SOMATIC",
+                "MATERIAL"
+              ]
+            },
+            "description": "components"
+          },
+          "higherLevels": {
+            "type": "string",
+            "description": "description of what the spell does when cast at higher levels"
+          }
+        },
+        "required": [
+          "name",
+          "school",
+          "level",
+          "spellRange",
+          "castingTime",
+          "duration",
+          "description",
+          "components",
+          "higherLevels"
+        ]
+      }
+    },
+    "securitySchemes": {}
+  },
+  "servers": []
+}
