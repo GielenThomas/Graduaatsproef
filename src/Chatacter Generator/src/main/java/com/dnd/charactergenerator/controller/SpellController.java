@@ -39,9 +39,23 @@ public class SpellController implements SpellsApi {
     }
 
     @Override
+    public ResponseEntity<Object> spellsIdPut(String id, SpellRequest spellRequest) {
+        Optional<Spell> spell = spellService.updateSpell(UUID.fromString(id), spellMapper.toSpell(spellRequest));
+        return spell.map(e -> new ResponseEntity<>(HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+
+    @Override
+    public ResponseEntity<Object> spellsIdDelete(String id) {
+        spellService.deleteSpell(UUID.fromString(id));
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
     public ResponseEntity<SpellResponse> spellsIdGet(String id) {
         Optional<Spell> spell = spellService.getSpell(UUID.fromString(id));
         return spell.map(e ->new ResponseEntity<>(spellMapper.toSpellResponse(e), HttpStatus.OK))
         .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+
+
 }
