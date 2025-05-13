@@ -51,17 +51,6 @@
         "responses": {
           "201": {
             "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {},
-                  "required": [
-                    "01JTAXD6VFXDE9E4THNVVSEG1A"
-                  ]
-                }
-              }
-            },
             "headers": {}
           }
         },
@@ -119,14 +108,6 @@
         "responses": {
           "200": {
             "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {}
-                }
-              }
-            },
             "headers": {}
           }
         },
@@ -164,8 +145,155 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {}
+                  "$ref": "#/components/schemas/SpellResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/feats": {
+      "get": {
+        "summary": "GetFeats",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FeatResponse"
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "CreateFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeatRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/feats/{id}": {
+      "get": {
+        "summary": "GetFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeatResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "delete": {
+        "summary": "DeleteFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "put": {
+        "summary": "UpdateFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeatRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeatResponse"
                 }
               }
             },
@@ -253,6 +381,91 @@
           "higherLevels"
         ]
       },
+      "FeatResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "id"
+        ]
+      },
+      "RaceResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "abilityScoreIncreases": {
+            "$ref": "#/components/schemas/Abillities",
+            "description": "ability score increases"
+          },
+          "age": {
+            "type": "string",
+            "description": "age"
+          },
+          "alignment": {
+            "type": "string",
+            "description": "alignment"
+          },
+          "size": {
+            "type": "string",
+            "description": "size"
+          },
+          "speed": {
+            "type": "string",
+            "description": "speed"
+          },
+          "feats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FeatResponse"
+            },
+            "description": "feats"
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "languages"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "abilityScoreIncreases",
+          "age",
+          "alignment",
+          "size",
+          "speed",
+          "feats",
+          "languages",
+          "id"
+        ]
+      },
       "SpellRequest": {
         "type": "object",
         "properties": {
@@ -320,6 +533,118 @@
           "duration",
           "description",
           "components"
+        ]
+      },
+      "FeatRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          }
+        },
+        "required": [
+          "name",
+          "description"
+        ]
+      },
+      "RaceRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "abilityScoreIncreases": {
+            "$ref": "#/components/schemas/Abillities",
+            "description": "ability score increases"
+          },
+          "age": {
+            "type": "string",
+            "description": "age"
+          },
+          "alignment": {
+            "type": "string",
+            "description": "alignment"
+          },
+          "size": {
+            "type": "string",
+            "description": "size"
+          },
+          "speed": {
+            "type": "string",
+            "description": "speed"
+          },
+          "feats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FeatRequest"
+            },
+            "description": "feats"
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "languages"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "abilityScoreIncreases",
+          "age",
+          "alignment",
+          "size",
+          "speed",
+          "feats",
+          "languages"
+        ]
+      },
+      "Abillities": {
+        "type": "object",
+        "properties": {
+          "strength": {
+            "type": "integer",
+            "description": "strength"
+          },
+          "dexterity": {
+            "type": "integer",
+            "description": "dexterity"
+          },
+          "constitution": {
+            "type": "integer",
+            "description": "constitution"
+          },
+          "intelligence": {
+            "type": "integer",
+            "description": "intelligence"
+          },
+          "wisdom": {
+            "type": "integer",
+            "description": "wisdom"
+          },
+          "charisma": {
+            "type": "integer",
+            "description": "charisma"
+          }
+        },
+        "required": [
+          "strength",
+          "dexterity",
+          "constitution",
+          "intelligence",
+          "wisdom",
+          "charisma"
         ]
       }
     },

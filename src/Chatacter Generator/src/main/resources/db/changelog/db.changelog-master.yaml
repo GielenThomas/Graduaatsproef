@@ -1,3 +1,7 @@
 databaseChangeLog:
   - include:
       file: db/changelog/tables/spell.yaml
+  - include:
+      file: db/changelog/tables/feat.yaml
+  - include:
+      file: db/changelog/tables/race.yaml
