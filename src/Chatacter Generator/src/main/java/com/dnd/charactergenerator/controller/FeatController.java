@@ -9,6 +9,7 @@ import com.dnd.model.FeatResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -34,6 +35,7 @@ public class FeatController implements FeatsApi {
     }
 
     @Override
+    @Secured("ROLE_ADMIN")
     public ResponseEntity<Void> featsIdDelete(String id) {
        featService.deleteFeat(UUID.fromString(id));
        return new ResponseEntity<>(HttpStatus.OK);
@@ -45,13 +47,16 @@ public class FeatController implements FeatsApi {
         return feat.map(e -> new ResponseEntity<>(featMapper.toFeatResponse(e),HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    @Override
-    public ResponseEntity<FeatResponse> featsIdPut(String id, FeatRequest featRequest) {
-        Optional<Feat> feat = featService.updateFeat(UUID.fromString(id),featMapper.toFeat(featRequest));
-        return feat.map(e -> new ResponseEntity<>(featMapper.toFeatResponse(e),HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
-    }
+
+//    @Secured("ROLE_ADMIN")
+//    @Override
+//    public ResponseEntity<FeatResponse> featsIdPut(String id, FeatRequest featRequest) {
+//        Optional<Feat> feat = featService.updateFeat(UUID.fromString(id),featMapper.toFeat(featRequest));
+//        return feat.map(e -> new ResponseEntity<>(featMapper.toFeatResponse(e),HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+//    }
 
     @Override
+    @Secured("ROLE_ADMIN")
     public ResponseEntity<Void> featsPost(FeatRequest featRequest) {
         featService.createFeat(featMapper.toFeat(featRequest));
         return new ResponseEntity<>(HttpStatus.CREATED);

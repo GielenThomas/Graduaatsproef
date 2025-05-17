@@ -9,6 +9,7 @@ import com.dnd.model.RaceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -33,6 +34,7 @@ public class RaceController implements RacesApi {
     }
 
     @Override
+    @Secured("ROLE_ADMIN")
     public ResponseEntity<Void> racesIdDelete(String id) {
         raceService.deleteRace(UUID.fromString(id));
         return new ResponseEntity<>(HttpStatus.OK);
@@ -45,6 +47,7 @@ public class RaceController implements RacesApi {
     }
 
     @Override
+    @Secured("ROLE_ADMIN")
     public ResponseEntity<Void> racesPost(RaceRequest raceRequest) {
         raceService.createRace(raceMapper.toRace(raceRequest));
         return new ResponseEntity<>(HttpStatus.OK);
