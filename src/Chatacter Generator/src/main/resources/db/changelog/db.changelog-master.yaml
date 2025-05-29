@@ -5,3 +5,5 @@ databaseChangeLog:
       file: db/changelog/tables/feat.yaml
   - include:
       file: db/changelog/tables/race.yaml
+  - include:
+      file: db/changelog/tables/users.yaml
