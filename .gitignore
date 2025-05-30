@@ -1,0 +1,41 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.lof
+*.lot
+*.synctex.gz
+*.run.xml
+
+# Minted cache files
+_minted*
+
+# Output PDF
+*.pdf
+
+# Temporary files (editors)
+*.bak
+*~
+*.swp
+*.DS_Store
+Thumbs.db
+
+# VSCode or TeXStudio
+.vscode/
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.xdy

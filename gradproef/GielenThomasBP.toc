@@ -12,8 +12,6 @@
 \contentsline {section}{\numberline {3.1}Ontwerp met Apidog}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Implementatie met Spring Boot}{9}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Ontwerp met Apidog}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Gebruik van Apidog}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}OpenAPI-specificatie}{10}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusie}{11}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{13}{appendix.A}%
+\contentsline {chapter}{\numberline {5}Conclusie}{14}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{16}{appendix.A}%
 \contentsfinish 
