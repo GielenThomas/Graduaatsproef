@@ -1,0 +1,2718 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.5.30)  30 MAY 2025 07:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./GielenThomasBP.tex
+(GielenThomasBP.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+(hogentreport.cls
+Document Class: hogentreport 2022/06/20 Hogeschool Gent report/thesis class
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex))
+\XKV@depth=\count268
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/oberdiek\iflang.st
+y
+Package: iflang 2018/01/21 v1.7 Checks for the current language (HO)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+Package iflang Info: Naming convention for patterns: babel.
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
+File: bk11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count269
+\c@chapter=\count270
+\c@section=\count271
+\c@subsection=\count272
+\c@subsubsection=\count273
+\c@paragraph=\count274
+\c@subparagraph=\count275
+\c@figure=\count276
+\c@table=\count277
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen146
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/05/14 v25.9 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count278
+\U@D=\dimen147
+\l@unhyphenated=\language79
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count279
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/babel-dutch\dutch.ldf
+Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/nl\babel
+-dutch.tex
+Package babel Info: Importing font and identification data for dutch
+(babel)             from babel-nl.ini. Reported on input line 11.
+)
+Package babel Info: Making " an active character on input line 127.
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count281
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count282
+\c@listtotal=\count283
+\c@listcount=\count284
+\c@liststart=\count285
+\c@liststop=\count286
+\c@citecount=\count287
+\c@citetotal=\count288
+\c@multicitecount=\count289
+\c@multicitetotal=\count290
+\c@instcount=\count291
+\c@maxnames=\count292
+\c@minnames=\count293
+\c@maxitems=\count294
+\c@minitems=\count295
+\c@citecounter=\count296
+\c@maxcitecounter=\count297
+\c@savedcitecounter=\count298
+\c@uniquelist=\count299
+\c@uniquename=\count300
+\c@refsection=\count301
+\c@refsegment=\count302
+\c@maxextratitle=\count303
+\c@maxextratitleyear=\count304
+\c@maxextraname=\count305
+\c@maxextradate=\count306
+\c@maxextraalpha=\count307
+\c@abbrvpenalty=\count308
+\c@highnamepenalty=\count309
+\c@lownamepenalty=\count310
+\c@maxparens=\count311
+\c@parenlevel=\count312
+\blx@tempcnta=\count313
+\blx@tempcntb=\count314
+\blx@tempcntc=\count315
+\c@blx@maxsection=\count316
+\blx@maxsegment@0=\count317
+\blx@notetype=\count318
+\blx@parenlevel@text=\count319
+\blx@parenlevel@foot=\count320
+\blx@sectionciteorder@0=\count321
+\blx@sectionciteorderinternal@0=\count322
+\blx@entrysetcounter=\count323
+\blx@biblioinstance=\count324
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language80
+\c@mincomprange=\count325
+\c@maxcomprange=\count326
+\c@mincompwidth=\count327
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'apa.dbx' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.dbx
+File: apa.dbx 2023/03/20 v9.17 APA biblatex style data model
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count328
+\c@savedafterword=\count329
+\c@annotator=\count330
+\c@savedannotator=\count331
+\c@author=\count332
+\c@savedauthor=\count333
+\c@bookauthor=\count334
+\c@savedbookauthor=\count335
+\c@commentator=\count336
+\c@savedcommentator=\count337
+\c@editor=\count338
+\c@savededitor=\count339
+\c@editora=\count340
+\c@savededitora=\count341
+\c@editorb=\count342
+\c@savededitorb=\count343
+\c@editorc=\count344
+\c@savededitorc=\count345
+\c@foreword=\count346
+\c@savedforeword=\count347
+\c@holder=\count348
+\c@savedholder=\count349
+\c@introduction=\count350
+\c@savedintroduction=\count351
+\c@namea=\count352
+\c@savednamea=\count353
+\c@nameb=\count354
+\c@savednameb=\count355
+\c@namec=\count356
+\c@savednamec=\count357
+\c@translator=\count358
+\c@savedtranslator=\count359
+\c@shortauthor=\count360
+\c@savedshortauthor=\count361
+\c@shorteditor=\count362
+\c@savedshorteditor=\count363
+\c@narrator=\count364
+\c@savednarrator=\count365
+\c@execproducer=\count366
+\c@savedexecproducer=\count367
+\c@execdirector=\count368
+\c@savedexecdirector=\count369
+\c@with=\count370
+\c@savedwith=\count371
+\c@labelname=\count372
+\c@savedlabelname=\count373
+\c@institution=\count374
+\c@savedinstitution=\count375
+\c@lista=\count376
+\c@savedlista=\count377
+\c@listb=\count378
+\c@savedlistb=\count379
+\c@listc=\count380
+\c@savedlistc=\count381
+\c@listd=\count382
+\c@savedlistd=\count383
+\c@liste=\count384
+\c@savedliste=\count385
+\c@listf=\count386
+\c@savedlistf=\count387
+\c@location=\count388
+\c@savedlocation=\count389
+\c@organization=\count390
+\c@savedorganization=\count391
+\c@origlocation=\count392
+\c@savedoriglocation=\count393
+\c@origpublisher=\count394
+\c@savedorigpublisher=\count395
+\c@publisher=\count396
+\c@savedpublisher=\count397
+\c@language=\count398
+\c@savedlanguage=\count399
+\c@origlanguage=\count400
+\c@savedoriglanguage=\count401
+\c@citation=\count402
+\c@savedcitation=\count403
+\c@pageref=\count404
+\c@savedpageref=\count405
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+\locallabelnumberwidth=\skip65
+\locallabelalphawidth=\skip66
+\localshorthandwidth=\skip67
+\localshortjournalwidth=\skip68
+\localshortserieswidth=\skip69
+\localshorttitlewidth=\skip70
+\localshortauthorwidth=\skip71
+\localshorteditorwidth=\skip72
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-unicode.de
+f)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count406
+\c@textcitetotal=\count407
+\c@textcitemaxnames=\count408
+\c@biburlbigbreakpenalty=\count409
+\c@biburlbreakpenalty=\count410
+\c@biburlnumpenalty=\count411
+\c@biburlucpenalty=\count412
+\c@biburllcpenalty=\count413
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count414
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-natbib.def
+File: blx-natbib.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.bbx
+File: apa.bbx 2023/03/20 v9.17 APA biblatex references style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count415
+\c@bbx:relatedtotal=\count416
+)
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
+ed, overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already d
+efined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'bib' already def
+ined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already
+ defined, overwriting.
+)
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\apa.cbx
+File: apa.cbx 2023/03/20 v9.17 APA biblatex citation style
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
+, overwriting.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\citeyear'.
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-04-29 L3 programming layer (loader) 
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2025-04-14 L3 backend support: XeTeX
+\g__graphics_track_int=\count417
+\g__pdfannot_backend_int=\count418
+\g__pdfannot_backend_link_int=\count419
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2025-04-29 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count420
+\csq@gtype=\count421
+\csq@glevel=\count422
+\csq@qlevel=\count423
+\csq@maxlvl=\count424
+\csq@tshold=\count425
+\csq@ltx@everypar=\toks19
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen148
+\captionmargin=\dimen149
+\caption@leftmargin=\dimen150
+\caption@rightmargin=\dimen151
+\caption@width=\dimen152
+\caption@indent=\dimen153
+\caption@parindent=\dimen154
+\caption@hangindent=\dimen155
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count426
+\c@continuedfloat=\count427
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc-2022-
+02-14.sty
+Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
+\FN@temptoken=\toks20
+\footnotemargin=\dimen156
+\@outputbox@depth=\dimen157
+Package footmisc Info: Declaring symbol style bringhurst on input line 699.
+Package footmisc Info: Declaring symbol style chicago on input line 707.
+Package footmisc Info: Declaring symbol style wiley on input line 716.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 747.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 768
+.
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count428
+\Gm@cntv=\count429
+\c@Gm@tempcnt=\count430
+\Gm@bindingoffset=\dimen158
+\Gm@wd@mp=\dimen159
+\Gm@odd@mp=\dimen160
+\Gm@even@mp=\dimen161
+\Gm@layoutwidth=\dimen162
+\Gm@layoutheight=\dimen163
+\Gm@layouthoffset=\dimen164
+\Gm@layoutvoffset=\dimen165
+\Gm@dimlist=\toks21
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-05-20 v7.01m Hypertext links for LaTeX
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count431
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen168
+\Hy@linkcounter=\count432
+\Hy@pagecounter=\count433
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-05-20 v7.01m Hyperref: PDFDocEncoding definition (HO)
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count434
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-05-20 v7.01m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 4040.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count435
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen169
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count436
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count437
+\c@Item=\count438
+\c@Hfootnote=\count439
+)
+Package hyperref Info: Driver: hxetex.
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
+File: hxetex.def 2025-05-20 v7.01m Hyperref driver for XeTeX
+\pdfm@box=\box53
+\c@Hy@AnnotLevel=\count440
+\HyField@AnnotCount=\count441
+\Fld@listcount=\count442
+\c@bookmark@seq@number=\count443
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip73
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count444
+\l__fontspec_language_int=\count445
+\l__fontspec_strnum_int=\count446
+\l__fontspec_tmp_int=\count447
+\l__fontspec_tmpa_int=\count448
+\l__fontspec_tmpb_int=\count449
+\l__fontspec_tmpc_int=\count450
+\l__fontspec_em_int=\count451
+\l__fontspec_emdef_int=\count452
+\l__fontspec_strong_int=\count453
+\l__fontspec_strongdef_int=\count454
+\l__fontspec_tmpa_dim=\dimen172
+\l__fontspec_tmpb_dim=\dimen173
+\l__fontspec_tmpc_dim=\dimen174
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/unicode-math\unicode-ma
+th.sty
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/unicode-math\unicode-ma
+th-xetex.sty
+Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip74
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen175
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen176
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count455
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count456
+\leftroot@=\count457
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count458
+\DOTSCASE@=\count459
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen177
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count460
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count461
+\dotsspace@=\muskip22
+\c@parentequation=\count462
+\dspbrk@lvl=\count463
+\tag@help=\toks23
+\row@=\count464
+\column@=\count465
+\maxfields@=\count466
+\andhelp@=\toks24
+\eqnshift@=\dimen178
+\alignsep@=\dimen179
+\tagshift@=\dimen180
+\tagwidth@=\dimen181
+\totwidth@=\dimen182
+\lineht@=\dimen183
+\@envbody=\toks25
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g__um_fam_int=\count467
+\g__um_fonts_used_int=\count468
+\l__um_primecount_int=\count469
+\g__um_primekern_muskip=\muskip23
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/unicode-math\unicode-ma
+th-table.tex)))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/realscripts\realscripts
+.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+\subsupersep=\dimen184
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box56
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count470
+\c@pgf@countb=\count471
+\c@pgf@countc=\count472
+\c@pgf@countd=\count473
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count474
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count475
+)))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count476
+\pgfsyssoftpath@bigbuffer@items=\count477
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count478
+\pgfmath@box=\box57
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count479
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count480
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen272
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen276
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count481
+\pgf@shadingcount=\count482
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box61
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box62
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count483
+\pgfplotmarksize=\dimen282
+)
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count484
+\tikznumberofchildren=\count485
+\tikznumberofcurrentchild=\count486
+\tikz@fig@count=\count487
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count488
+\pgfmatrixcurrentcolumn=\count489
+\pgf@matrix@numberofcolumns=\count490
+)
+\tikz@expandcount=\count491
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box67
+\pgf@layerboxsaved@background=\box68
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.s
+ty
+Package: standalone 2025/02/22 v1.5a Package to include TeX sub-files with prea
+mbles
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/currfile\currfile.sty
+Package: currfile 2024/03/14 v1.0 Provides the file path elements of the curren
+t input file
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/filehook\filehook-2020.
+sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count492
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/gincltex\gincltex.sty
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/svn-prov\svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box69
+)
+\tc@llx=\dimen291
+\tc@lly=\dimen292
+\tc@urx=\dimen293
+\tc@ury=\dimen294
+Package trimclip Info: Using driver 'tc-xetex.def'.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen295
+\adjbox@Height=\dimen296
+\adjbox@Depth=\dimen297
+\adjbox@Totalheight=\dimen298
+\adjbox@pwidth=\dimen299
+\adjbox@pheight=\dimen300
+\adjbox@pdepth=\dimen301
+\adjbox@ptotalheight=\dimen302
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count493
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box70
+\sift@deathcycles=\count494
+\@vwid@loff=\dimen303
+\@vwid@roff=\dimen304
+))
+\gincltex@box=\box71
+))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen305
+\WF@size=\dimen306
+\c@WF@wrappedlines=\count495
+\WF@box=\box72
+\WF@everypar=\toks39
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count496
+\c@@ppsavesec=\count497
+\c@@ppsaveapp=\count498
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen307
+\lightrulewidth=\dimen308
+\cmidrulewidth=\dimen309
+\belowrulesep=\dimen310
+\belowbottomsep=\dimen311
+\aboverulesep=\dimen312
+\abovetopsep=\dimen313
+\cmidrulesep=\dimen314
+\cmidrulekern=\dimen315
+\defaultaddspace=\dimen316
+\@cmidla=\count499
+\@cmidlb=\count500
+\@aboverulesep=\dimen317
+\@belowrulesep=\dimen318
+\@thisruleclass=\count501
+\@lastruleclass=\count502
+\@thisrulewidth=\dimen319
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks40
+\labelindent=\skip77
+\enit@outerparindent=\dimen320
+\enit@toks=\toks41
+\enit@inbox=\box73
+\enit@count@id=\count503
+\enitdp@description=\count504
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip78
+\f@nch@offset@elh=\skip79
+\f@nch@offset@erh=\skip80
+\f@nch@offset@olh=\skip81
+\f@nch@offset@orh=\skip82
+\f@nch@offset@elf=\skip83
+\f@nch@offset@erf=\skip84
+\f@nch@offset@olf=\skip85
+\f@nch@offset@orf=\skip86
+\f@nch@height=\skip87
+\f@nch@footalignment=\skip88
+\f@nch@widthL=\skip89
+\f@nch@widthC=\skip90
+\f@nch@widthR=\skip91
+\@temptokenb=\toks42
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen321
+\ar@mcellbox=\box74
+\extrarowheight=\dimen322
+\NC@list=\toks43
+\extratabsurround=\skip92
+\backup@length=\skip93
+\ar@cellbox=\box75
+)
+\rotheadsize=\dimen323
+\c@nlinenum=\count505
+\TeXr@lab=\toks44
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count506
+\calc@Bcount=\count507
+\calc@Adimen=\dimen324
+\calc@Bdimen=\dimen325
+\calc@Askip=\skip94
+\calc@Bskip=\skip95
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count508
+\calc@Cskip=\skip96
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen326
+\ESO@tempdimb=\dimen327
+)
+\AM@pagewidth=\dimen328
+\AM@pageheight=\dimen329
+\AM@fboxrule=\dimen330
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\ppxetex.def
+File: ppxetex.def 2025/03/12 v0.6f Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count509
+\AM@pagebox=\box76
+\AM@global@opts=\toks45
+\AM@pagecnt=\count510
+\AM@toc@title=\toks46
+\AM@lof@heading=\toks47
+\c@AM@survey=\count511
+\AM@templatesizebox=\box77
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count512
+\rotFPtop=\skip97
+\rotFPbot=\skip98
+\rot@float@box=\box78
+\rot@mess@toks=\toks48
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen331
+\TX@old@table=\dimen332
+\TX@old@col=\dimen333
+\TX@target=\dimen334
+\TX@delta=\dimen335
+\TX@cols=\count513
+\TX@ftn=\toks49
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/05/20 version 6.5.0 text color boxes
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks50
+\verbatim@line=\toks51
+\verbatim@in@stream=\read5
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box79
+\tcb@upperbox=\box80
+\tcb@lowerbox=\box81
+\tcb@phantombox=\box82
+\c@tcbbreakpart=\count514
+\c@tcblayer=\count515
+\c@tcolorbox@number=\count516
+\l__tcobox_tmpa_box=\box83
+\l__tcobox_tmpa_dim=\dimen336
+\tcb@temp=\box84
+\tcb@temp=\box85
+\tcb@temp=\box86
+\tcb@temp=\box87
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box88
+\beforetitleunit=\skip99
+\aftertitleunit=\skip100
+\ttl@plus=\dimen337
+\ttl@minus=\dimen338
+\ttl@toksa=\toks52
+\titlewidth=\dimen339
+\titlewidthlast=\dimen340
+\titlewidthfirst=\dimen341
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
+Package: titletoc 2025/01/04 v2.17 TOC entries
+\ttl@leftsep=\dimen342
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box89
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+\MT@toks=\toks53
+\MT@tempbox=\box90
+\MT@count=\count517
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks54
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen343
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count518
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-xet
+ex.def
+File: microtype-xetex.def 2025/02/11 v3.2a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip101
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'Montserrat(0)' created for font
+(fontspec)             'Montserrat' with options
+(fontspec)             [Ligatures=TeX,BoldFont={Montserrat Black}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;mapping=tex-
+text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;+smcp;mappin
+g=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Montserrat
+(fontspec)             Black/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat
+(fontspec)             Black/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;mapping=te
+x-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;+smcp;mapp
+ing=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Montserrat
+(fontspec)             Black/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat
+(fontspec)             Black/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'Montserrat(1)' created for font
+(fontspec)             'Montserrat' with options
+(fontspec)             [Ligatures=TeX,BoldFont={Montserrat ExtraBold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;mapping=tex-
+text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;+smcp;mappin
+g=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Montserrat
+(fontspec)             ExtraBold/OT:script=latn;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat
+(fontspec)             ExtraBold/OT:script=latn;language=dflt;+smcp;mapping=tex
+-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;mapping=te
+x-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;+smcp;mapp
+ing=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Montserrat
+(fontspec)             ExtraBold/I/OT:script=latn;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat
+(fontspec)             ExtraBold/I/OT:script=latn;language=dflt;+smcp;mapping=t
+ex-text;"
+
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'Montserrat(2)' created for font
+(fontspec)             'Montserrat' with options
+(fontspec)             [Ligatures=TeX,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;mapping=tex-
+text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;+smcp;mappin
+g=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Montserrat/B/OT:script=latn;language=dflt;mapping=te
+x-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat/B/OT:script=latn;language=dflt;+smcp;mapp
+ing=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;mapping=te
+x-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;+smcp;mapp
+ing=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Montserrat/BI/OT:script=latn;language=dflt;mapping=t
+ex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat/BI/OT:script=latn;language=dflt;+smcp;map
+ping=tex-text;"
+
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'Montserrat(3)' created for font
+(fontspec)             'Montserrat' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;mapping=tex-
+text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat/OT:script=latn;language=dflt;+smcp;mappin
+g=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Montserrat/B/OT:script=latn;language=dflt;mapping=te
+x-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Montserrat/B/OT:script=latn;language=dflt;+smcp;mapp
+ing=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;mapping=te
+x-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat/I/OT:script=latn;language=dflt;+smcp;mapp
+ing=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Montserrat/BI/OT:script=latn;language=dflt;mapping=t
+ex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Montserrat/BI/OT:script=latn;language=dflt;+smcp;map
+ping=tex-text;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Montserrat(3)/m/n on input line 406.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Montserrat(3)/m/it on input line 40
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Montserrat(3)/b/n on input line 406
+.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/montserrat\Montserrat.f
+ontspec)
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/Montserrat(3)/m/n on input line 407
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/Montserrat(3)/b/n on input line 40
+7.
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Fira Code/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraCode(0)' created for font 'Fira Code'
+(fontspec)             with options
+(fontspec)             [Ligatures=TeX,WordSpace={1,0,0},HyphenChar=None,Punctua
+tionSpace=WordSpace,StylisticSet={1,3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Fira
+(fontspec)             Code/OT:script=latn;language=dflt;+ss01;+ss03;mapping=te
+x-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira
+(fontspec)             Code/B/OT:script=latn;language=dflt;+ss01;+ss03;mapping=
+tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Fira
+(fontspec)             Code/BI/OT:script=latn;language=dflt;+ss01;+ss03;mapping
+=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Fira Code/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraCode(1)' created for font 'Fira Code'
+(fontspec)             with options [Ligatures=TeX,StylisticSet={1,3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Fira
+(fontspec)             Code/OT:script=latn;language=dflt;+ss01;+ss03;mapping=te
+x-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira
+(fontspec)             Code/B/OT:script=latn;language=dflt;+ss01;+ss03;mapping=
+tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Fira
+(fontspec)             Code/BI/OT:script=latn;language=dflt;+ss01;+ss03;mapping
+=tex-text;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/FiraCode(1)/m/n on input line 420.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/FiraCode(1)/b/n on input line 420.
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMathRegular(0)' created for font 'Fira
+(fontspec)             Math Regular' with options
+(fontspec)             [Ligatures=TeX,BoldItalicFont={},ItalicFont={},SmallCaps
+Font={},Script=Math,BoldFont={Fira
+(fontspec)             Math Bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Fira Math
+(fontspec)             Regular/OT:script=math;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira Math
+(fontspec)             Bold/OT:script=math;language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMathRegular(1)' created for font 'Fira
+(fontspec)             Math Regular' with options
+(fontspec)             [Ligatures=TeX,BoldItalicFont={},ItalicFont={},SmallCaps
+Font={},Script=Math,SizeFeatures={{Size=9.417-},{Size=7.1175-9.417,Font=Fira
+(fontspec)             Math Regular,Style=MathScript},{Size=-7.1175,Font=Fira
+(fontspec)             Math Regular,Style=MathScriptScript}},BoldFont={Fira
+(fontspec)             Math Bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <9.417->"Fira Math
+(fontspec)             Regular/OT:script=math;language=dflt;mapping=tex-text;"<
+7.1175-9.417>"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;+ssty=0;mapping=tex
+-text;"<-7.1175>"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;+ssty=1;mapping=tex
+-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira Math
+(fontspec)             Bold/OT:script=math;language=dflt;mapping=tex-text;"
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 434.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/FiraMathRegular(1)/m/n on input line
+ 434.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 434.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/FiraMathRegular(1)/b/n on input lin
+e 434.
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Bold scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMathRegular(2)' created for font 'Fira
+(fontspec)             Math Regular' with options
+(fontspec)             [Ligatures=TeX,BoldItalicFont={},ItalicFont={},SmallCaps
+Font={},Script=Math,SizeFeatures={{Size=9.417-},{Size=7.1175-9.417,Font=Fira
+(fontspec)             Math Regular,Style=MathScript},{Size=-7.1175,Font=Fira
+(fontspec)             Math Regular,Style=MathScriptScript}},BoldFont={Fira
+(fontspec)             Math Bold},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =6.351pt\relax \fontdimen 9\font =4.9275pt\relax
+(fontspec)             \fontdimen 10\font =4.9275pt\relax \fontdimen 11\font
+(fontspec)             =7.665pt\relax \fontdimen 12\font =5.256pt\relax
+(fontspec)             \fontdimen 13\font =4.38pt\relax \fontdimen 14\font
+(fontspec)             =4.38pt\relax \fontdimen 15\font =2.9565pt\relax
+(fontspec)             \fontdimen 16\font =3.8325pt\relax \fontdimen 17\font
+(fontspec)             =3.8325pt\relax \fontdimen 18\font =3.942pt\relax
+(fontspec)             \fontdimen 19\font =2.7375pt\relax \fontdimen 22\font
+(fontspec)             =3.066pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.417->s*[1.0001]"Fira Math
+(fontspec)             Regular/OT:script=math;language=dflt;mapping=tex-text;"<
+7.1175-9.417>s*[1.0001]"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;+ssty=0;mapping=tex
+-text;"<-7.1175>s*[1.0001]"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;+ssty=1;mapping=tex
+-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.0001]"Fira Math
+(fontspec)             Bold/OT:script=math;language=dflt;mapping=tex-text;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 434.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/FiraMathRegular(2)/m/n on input lin
+e 434.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 434.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/FiraMathRegular(2)/b/n on input lin
+e 434.
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Math Bold scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMathRegular(3)' created for font 'Fira
+(fontspec)             Math Regular' with options
+(fontspec)             [Ligatures=TeX,BoldItalicFont={},ItalicFont={},SmallCaps
+Font={},Script=Math,SizeFeatures={{Size=9.417-},{Size=7.1175-9.417,Font=Fira
+(fontspec)             Math Regular,Style=MathScript},{Size=-7.1175,Font=Fira
+(fontspec)             Math Regular,Style=MathScriptScript}},BoldFont={Fira
+(fontspec)             Math Bold},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.8322pt\relax \fontdimen 9\font
+(fontspec)             =1.6425pt\relax \fontdimen 10\font =1.6425pt\relax
+(fontspec)             \fontdimen 11\font =1.6425pt\relax \fontdimen 12\font
+(fontspec)             =6.56999pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.417->s*[0.9999]"Fira Math
+(fontspec)             Regular/OT:script=math;language=dflt;mapping=tex-text;"<
+7.1175-9.417>s*[0.9999]"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;+ssty=0;mapping=tex
+-text;"<-7.1175>s*[0.9999]"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;+ssty=1;mapping=tex
+-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.9999]"Fira Math
+(fontspec)             Bold/OT:script=math;language=dflt;mapping=tex-text;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 4
+34.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/FiraMathRegular(3)/m/n on input lin
+e 434.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 434
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/FiraMathRegular(3)/b/n on input lin
+e 434.
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraMathRegular(4)' created for font 'Fira
+(fontspec)             Math Regular' with options
+(fontspec)             [Ligatures=TeX,BoldItalicFont={},ItalicFont={},SmallCaps
+Font={},Script=Math,SizeFeatures={{Size=9.417-},{Size=7.1175-9.417,Font=Fira
+(fontspec)             Math Regular,Style=MathScript},{Size=-7.1175,Font=Fira
+(fontspec)             Math Regular,Style=MathScriptScript}},FakeSlant].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <9.417->"Fira Math
+(fontspec)             Regular/OT:script=math;language=dflt;slant=0.2;mapping=t
+ex-text;"<7.1175-9.417>"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;slant=0.2;+ssty=0;m
+apping=tex-text;"<-7.1175>"Fira
+(fontspec)             Math
+(fontspec)             Regular/OT:script=math;language=dflt;slant=0.2;+ssty=1;m
+apping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira Math
+(fontspec)             Regular/B/OT:script=math;language=dflt;slant=0.2;mapping
+=tex-text;"
+
+\sym__um_fam1=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
+(Font)                  TU/FiraMathRegular(4)/m/n --> TU/FiraMathRegular(4)/m/n
+ on input line 434.
+LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
+(Font)                  TU/FiraMathRegular(4)/m/n --> TU/FiraMathRegular(4)/b/n
+ on input line 434.
+\logopart=\box91
+File: ../graphics/logopart.eps Graphic file (type eps)
+<../graphics/logopart.eps>
+Package hyperref Info: Option `colorlinks' set `true' on input line 667.
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count519
+\l__lipsum_a_int=\count520
+\l__lipsum_b_int=\count521
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+Package: minted 2025/05/14 v3.7.0 Yet another Pygments shim for LaTeX
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2025/05/14 v1.13.0 fvextra - extensions and patches for fancyv
+rb
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count522
+\FV@InFile=\read6
+\FV@TabBox=\box92
+\c@FancyVerbLine=\count523
+\FV@StepNumber=\count524
+\FV@OutFile=\write5
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2025/05/13 line numbers on paragraphs v5.5
+\linenopenalty=\count525
+\output=\toks55
+\linenoprevgraf=\count526
+\linenumbersep=\dimen344
+\linenumberwidth=\dimen345
+\c@linenumber=\count527
+\c@pagewiselinenumber=\count528
+\c@LN@truepage=\count529
+\c@internallinenumber=\count530
+\c@internallinenumbers=\count531
+\quotelinenumbersep=\dimen346
+\bframerule=\dimen347
+\bframesep=\dimen348
+\bframebox=\box93
+\@LN@amsmath@ams@eqpen=\count532
+
+
+LaTeX Warning: Command \@parboxrestore  has changed.
+               Check if current package is valid.
+
+)
+
+Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
+rning from the lineno package on input line 37.
+
+\c@FancyVerbWriteLine=\count533
+\c@FancyVerbBufferLine=\count534
+\c@FV@TrueTabGroupLevel=\count535
+\c@FV@TrueTabCounter=\count536
+\FV@TabBox@Group=\box94
+\FV@bgcolorstructbox=\box95
+\FV@TmpLength=\skip102
+\c@FV@HighlightLinesStart=\count537
+\c@FV@HighlightLinesStop=\count538
+\FV@LoopCount=\count539
+\FV@NCharsBox=\box96
+\FV@BreakIndent=\dimen349
+\FV@BreakIndentNChars=\count540
+\FV@BreakSymbolSepLeft=\dimen350
+\FV@BreakSymbolSepLeftNChars=\count541
+\FV@BreakSymbolSepRight=\dimen351
+\FV@BreakSymbolSepRightNChars=\count542
+\FV@BreakSymbolIndentLeft=\dimen352
+\FV@BreakSymbolIndentLeftNChars=\count543
+\FV@BreakSymbolIndentRight=\dimen353
+\FV@BreakSymbolIndentRightNChars=\count544
+\c@FancyVerbLineBreakLast=\count545
+\FV@LineBox=\box97
+\FV@LineIndentBox=\box98
+\c@FV@BreakBufferDepth=\count546
+\FV@LineWidth=\dimen354
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/latex2pydata\latex2pyda
+ta.sty
+Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Py
+thon literal format
+)
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks56
+\pgfopts@list@add@b@toks=\toks57
+)
+
+! Package minted Error: Package option "outputdir" is no longer needed with min
+ted v3+; the output directory is automatically detected for TeX Live 2024+, and
+ the environment variable TEXMF_OUTPUT_DIRECTORY can be set manually in other c
+ases.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 \ProcessPgfOptions{/minted/pkg}
+                                     
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count547
+\float@exts=\toks58
+\float@box=\box99
+\@float@everytoks=\toks59
+\@floatcapt=\box100
+)
+\c@minted@FancyVerbLineTemp=\count548
+\@float@every@listing=\toks60
+\c@listing=\count549
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'dutch'.
+
+(GielenThomasBP.aux
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported  on input line 10.
+)
+\openout1 = `GielenThomasBP.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+Package biblatex Info: Trying to load language 'dutch' -> 'dutch-apa'...
+Package biblatex Info: ... file 'dutch-apa.lbx' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\dutch-apa.
+lbx
+File: dutch-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
+Package biblatex Info: Trying to load language 'dutch'...
+Package biblatex Info: ... file 'dutch.lbx' found.
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\dutch.lbx
+File: dutch.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'dutch'...
+Package biblatex Info: ... file 'dutch.lbx' found.
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\dutch.lbx
+File: dutch.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+))
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `GielenThomasBP.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'GielenThomasBP.bbl' not found.
+
+No file GielenThomasBP.bbl.
+Package biblatex Info: Reference section=0 on input line 77.
+Package biblatex Info: Reference segment=0 on input line 77.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(59.75076pt, 448.1309pt, 89.6262pt)
+* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=448.1309pt
+* \textheight=676.04005pt
+* \oddsidemargin=-12.51923pt
+* \evensidemargin=-12.51923pt
+* \topmargin=-38.54109pt
+* \headheight=14.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 77.
+(GielenThomasBP.out) (GielenThomasBP.out)
+\@outlinefile=\write6
+\openout6 = `GielenThomasBP.out'.
+
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+))
+Package microtype Info: Patching varwidth to enable character protrusion.
+\MT@vwid@leftmargin=\dimen355
+\MT@vwid@rightmargin=\dimen356
+LaTeX Info: Redefining \microtypecontext on input line 77.
+Package microtype Info: Applying patch `item' on input line 77.
+Package microtype Info: Applying patch `toc' on input line 77.
+Package microtype Info: Applying patch `eqnum' on input line 77.
+Package microtype Info: Applying patch `footnote' on input line 77.
+Package microtype Info: Applying patch `verbatim' on input line 77.
+LaTeX Info: Redefining \microtypesetup on input line 77.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Montserrat' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package hyperref Info: Option `pageanchor' set `false' on input line 83.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 730.03294pt, 58.1084pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=512.14963pt
+* \textheight=730.03294pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-49.23828pt
+* \headheight=14.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+
+ []
+
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 94 replaced by U+FFFD.
+File: ../graphics/hogent_logo.eps Graphic file (type eps)
+<../graphics/hogent_logo.eps>
+
+
+[1
+
+
+
+
+]
+
+[2]
+Package hyperref Info: Option `pageanchor' set `true' on input line 95.
+ (voorwoord.tex
+! Misplaced alignment tab character &.
+l.16 ...ntwikkelen voor het beheren van Dungeons &
+                                                   Dragons-personages. Dit o...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+) (samenvatting.tex
+
+[3
+
+
+
+])
+
+[4
+
+] (GielenThomasBP.toc)
+\tf@toc=\write7
+\openout7 = `GielenThomasBP.toc'.
+
+
+
+[5
+
+] (GielenThomasBP.lof
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `FiraMathRegular' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 4.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
+(Font)              scaled to size 7.88484pt on input line 4.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
+(Font)              scaled to size 6.35167pt on input line 4.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 4.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
+(Font)              scaled to size 7.88315pt on input line 4.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
+(Font)              scaled to size 6.35031pt on input line 4.
+)
+\tf@lof=\write8
+\openout8 = `GielenThomasBP.lof'.
+
+
+
+[6
+
+] (GielenThomasBP.lot)
+\tf@lot=\write9
+\openout9 = `GielenThomasBP.lot'.
+
+
+
+[7
+
+] (GielenThomasBP.lol)
+\tf@lol=\write10
+\openout10 = `GielenThomasBP.lol'.
+
+
+
+[8
+
+
+] (inleiding.tex
+Hoofdstuk 1.
+! Undefined control sequence.
+\enit@enditemize ->\enit@after 
+                               \endlist \ifx \enit@series \relax \else \ifnu...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@enditemize ...x \else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.19 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.19 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.19 \end{itemize}
+                  
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+\enit@enditemize ...ist \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.19 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.19 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.19 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.19 \end{itemize}
+                  
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.19 \end{itemize}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+! Misplaced alignment tab character &.
+l.26 ...D-spelers en ontwikkelaars van digitale D&
+                                                  D-tools is er behoefte aan...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+
+[1
+
+
+]
+! Misplaced alignment tab character &.
+l.38 ...behulp van Spring Boot, waarmee Dungeons &
+                                                   Dragons-personages kunnen...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.38 ...Boot een degelijke backend voor Dungeons &
+                                                   Dragons-personagebeheer t...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+) (standvanzaken.tex
+
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported  on input line 1.
+[2]
+
+[3]
+Hoofdstuk 2.
+
+LaTeX Warning: Citation 'Pollefliet2011' on page 4 undefined on input line 10.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `FiraCode' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+LaTeX Warning: Citation 'Knuth1998' on page 4 undefined on input line 14.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Creeger2009' on page 4 undefined on input line 14.
+
+File: ../graphics/grail.jpg Graphic file (type bmp)
+<../graphics/grail.jpg>
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.25   \begin{minted}{python}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.25   \begin{minted}{python}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.25   \begin{minted}{python}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+\pydata@fh@0=\write11
+\openout11 = `_3045BBEA7C7D8731EC37A2E87EA14392.data.minted'.
+
+runsystem(latexminted config  --timestamp 20250530075854 3045BBEA7C7D8731EC37A2
+E87EA14392)...disabled (restricted).
+
+
+! Package minted Error: minted v3+ executable is not installed, is not added to
+ PATH, or is not permitted with restricted shell escape; or MiKTeX is being use
+d with -aux-directory or -output-directory without setting a TEXMF_OUTPUT_DIREC
+TORY environment variable.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31   \end{minted}
+                   
+(That was another \errmessage.)
+
+
+! Package minted Error: Missing definition for highlighting style "solarized-li
+ght" (minted executable is unavailable or disabled); attempting to substitute f
+allback style.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31   \end{minted}
+                   
+(That was another \errmessage.)
+
+
+! Package minted Error: Missing definition for highlighting style "default" (mi
+nted executable is unavailable or disabled); attempting to substitute fallback 
+style.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31   \end{minted}
+                   
+(That was another \errmessage.)
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31   \end{minted}
+                   
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.31   \end{minted}
+                   
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.31   \end{minted}
+                   
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.31   \end{minted}
+                   
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 31.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 31.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 31.
+LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 31.
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.31   \end{minted}
+                   
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.31   \end{minted}
+                   
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.31   \end{minted}
+                   
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 32.
+
+
+[4
+
+]
+
+[5]
+
+[6]
+
+[7]) (methodologie.tex
+
+[8]
+Hoofdstuk 3.
+
+Overfull \hbox (8.08612pt too wide) in paragraph at lines 35--36
+\TU/Montserrat(1)/m/n/10.95 mentatie werden functionaliteiten ontwikkeld om Dun
+geons & Dragons-personages
+ []
+
+) (dogApi.tex
+
+[9
+
+]
+Hoofdstuk 4.
+) (conclusie.tex
+
+[10
+
+]
+Hoofdstuk 5.
+
+
+[11
+
+])
+
+[12]
+B\ij lage A.
+
+
+[13
+
+]
+
+LaTeX Warning: Empty bibliography on input line 174.
+
+(GielenThomasBP.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `GielenThomasBP.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `GielenThomasBP.out':
+(rerunfilecheck)             Before: 00031E46F26C241056267EE90B6A48C9;1984
+(rerunfilecheck)             After:  93CB24BCE3DF9E1DFC84AA33B36D01B6;2430.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                GielenThomasBP
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'GielenThomasBP.run.xml'.
+\openout1 = `GielenThomasBP.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 50074 strings out of 405039
+ 1020821 string characters out of 5499318
+ 2260626 words of memory out of 5000000
+ 75995 multiletter control sequences out of 15000+600000
+ 630680 words of font info for 111 fonts, out of 8000000 for 9000
+ 1349 hyphenation exceptions out of 8191
+ 110i,11n,131p,1314b,4151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on GielenThomasBP.pdf (21 pages).

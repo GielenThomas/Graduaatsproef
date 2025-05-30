@@ -1,0 +1,37 @@
+%%=============================================================================
+%% Methodologie
+%%=============================================================================
+
+\chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}%
+\label{ch:methodologie}
+
+%% TODO: In dit hoofstuk geef je een korte toelichting over hoe je te werk bent
+%% gegaan. Verdeel je onderzoek in grote fasen, en licht in elke fase toe wat
+%% de doelstelling was, welke deliverables daar uit gekomen zijn, en welke
+%% onderzoeksmethoden je daarbij toegepast hebt. Verantwoord waarom je
+%% op deze manier te werk gegaan bent.
+%% 
+%% Voorbeelden van zulke fasen zijn: literatuurstudie, opstellen van een
+%% requirements-analyse, opstellen long-list (bij vergelijkende studie),
+%% selectie van geschikte tools (bij vergelijkende studie, "short-list"),
+%% opzetten testopstelling/PoC, uitvoeren testen en verzamelen
+%% van resultaten, analyse van resultaten, ...
+%%
+%% !!!!! LET OP !!!!!
+%%
+%% Het is uitdrukkelijk NIET de bedoeling dat je het grootste deel van de corpus
+%% van je graduaatsproef in dit hoofstuk verwerkt! Dit hoofdstuk is eerder een
+%% kort overzicht van je plan van aanpak.
+%%
+%% Maak voor elke fase (behalve het literatuuronderzoek) een NIEUW HOOFDSTUK aan
+%% en geef het een gepaste titel.
+
+\section{Ontwerp met Apidog}
+
+Voor de ontwikkeling van de API werd gekozen voor een \emph{API-Design First} benadering. Hierbij werd direct begonnen met het ontwerpen van de API in \textbf{Apidog}, een tool die het mogelijk maakt om API-specificaties visueel en overzichtelijk op te stellen. Met Apidog werden alle benodigde endpoints, request- en responseformaten en validatieregels vastgelegd voordat de daadwerkelijke implementatie startte. Dit zorgde voor duidelijkheid over wat de API moest doen en maakte het mogelijk om vroegtijdig te testen en de documentatie automatisch te genereren. Door deze gestructureerde aanpak werden fouten tijdens de implementatie beperkt en kon het ontwikkelproces efficiënter verlopen.
+
+\section{Implementatie met Spring Boot}
+
+Op basis van het ontwerp uit Apidog werd de backend van de API geïmplementeerd met het \textbf{Spring Boot} framework. Spring Boot biedt een snelle en gestroomlijnde manier om RESTful API’s te ontwikkelen in Java, met ingebouwde ondersteuning voor onder andere routing, datahandling en beveiliging. Tijdens de implementatie werden functionaliteiten ontwikkeld om Dungeons \& Dragons-personages aan te maken, te beheren en gebruikersauthenticatie te ondersteunen. De structuur en specificaties vanuit Apidog dienden als leidraad, zodat de implementatie nauw aansloot bij het vooraf opgestelde ontwerp. Daarnaast werden testen uitgevoerd om te garanderen dat de API correct functioneerde en voldeed aan de gestelde eisen.
+
+
