@@ -1,0 +1,131 @@
+databaseChangeLog:
+  # 1. Create Race Table with Embedded Abilities Fields
+  - changeSet:
+      id: 1
+      author: Thomas Gielen
+      changes:
+        - createTable:
+            tableName: race
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: VARCHAR(2000)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: age
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: alignment
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: size
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: speed
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+              # Abilities embedded fields
+              - column:
+                  name: strength
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: dexterity
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: constitution
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: intelligence
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: wisdom
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: charisma
+                  type: INT
+                  constraints:
+                    nullable: false
+
+  # 2. Create Many-to-Many Table (race_feats)
+  - changeSet:
+      id: 2
+      author: Thomas Gielen
+      changes:
+        - createTable:
+            tableName: race_feats
+            columns:
+              - column:
+                  name: race_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: feat_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: race_feats
+            baseColumnNames: race_id
+            referencedTableName: race
+            referencedColumnNames: id
+            constraintName: fk_race_feats_race_id
+        - addForeignKeyConstraint:
+            baseTableName: race_feats
+            baseColumnNames: feat_id
+            referencedTableName: feat
+            referencedColumnNames: id
+            constraintName: fk_race_feats_feat_id
+
+  # 3. Create ElementCollection Table (race_languages)
+  - changeSet:
+      id: 3
+      author: Thomas Gielen
+      changes:
+        - createTable:
+            tableName: race_languages
+            columns:
+              - column:
+                  name: race_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: language
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: race_languages
+            baseColumnNames: race_id
+            referencedTableName: race
+            referencedColumnNames: id
+            constraintName: fk_race_languages_race_id

@@ -1,0 +1,761 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "D&D Character Generator",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [],
+  "paths": {
+    "/spells": {
+      "get": {
+        "summary": "GetSpells",
+        "deprecated": false,
+        "description": "fetches all the spells",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SpellResponse"
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "CreateSpell",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SpellRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/spells/{id}": {
+      "get": {
+        "summary": "GetSpell",
+        "deprecated": false,
+        "description": "fetches the spell",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpellResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "delete": {
+        "summary": "DeleteSpell",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "put": {
+        "summary": "Editspell",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SpellRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpellResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/feats": {
+      "get": {
+        "summary": "GetFeats",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FeatResponse"
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "CreateFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeatRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/feats/{id}": {
+      "get": {
+        "summary": "GetFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeatResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "delete": {
+        "summary": "DeleteFeat",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "put": {
+        "summary": "UpdateRace",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RaceRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RaceResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/races/{id}": {
+      "get": {
+        "summary": "GetRace",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RaceResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "delete": {
+        "summary": "DeleteRace",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/races": {
+      "get": {
+        "summary": "Getraces",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RaceResponse"
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "CreateRace",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RaceRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SpellResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "level": {
+            "type": "string",
+            "description": "casting level"
+          },
+          "school": {
+            "type": "string",
+            "description": "school",
+            "enum": [
+              "ABJURATION",
+              "CONJURATION",
+              "DIVINATION",
+              "ENCHANTMENT",
+              "EVOCATION",
+              "ILLUSION",
+              "NECROMANCY",
+              "TRANSMUTATION"
+            ]
+          },
+          "castingTime": {
+            "type": "string",
+            "description": "casting time"
+          },
+          "spellRange": {
+            "type": "string",
+            "description": "range"
+          },
+          "duration": {
+            "type": "string",
+            "description": "duration"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "VERBAL",
+                "SOMATIC",
+                "MATERIAL"
+              ]
+            },
+            "description": "components"
+          },
+          "higherLevels": {
+            "type": "string",
+            "description": "description of what the spell does when cast at higher levels"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "school",
+          "level",
+          "spellRange",
+          "castingTime",
+          "duration",
+          "description",
+          "components",
+          "higherLevels"
+        ]
+      },
+      "FeatResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "id"
+        ]
+      },
+      "RaceResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "abilityScoreIncreases": {
+            "$ref": "#/components/schemas/Abillities",
+            "description": "ability score increases"
+          },
+          "age": {
+            "type": "string",
+            "description": "age"
+          },
+          "alignment": {
+            "type": "string",
+            "description": "alignment"
+          },
+          "size": {
+            "type": "string",
+            "description": "size"
+          },
+          "speed": {
+            "type": "string",
+            "description": "speed"
+          },
+          "feats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FeatResponse"
+            },
+            "description": "feats"
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "languages"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "abilityScoreIncreases",
+          "age",
+          "alignment",
+          "size",
+          "speed",
+          "feats",
+          "languages",
+          "id"
+        ]
+      },
+      "SpellRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "level": {
+            "type": "string",
+            "description": "casting level"
+          },
+          "school": {
+            "type": "string",
+            "description": "school",
+            "enum": [
+              "ABJURATION",
+              "CONJURATION",
+              "DIVINATION",
+              "ENCHANTMENT",
+              "EVOCATION",
+              "ILLUSION",
+              "NECROMANCY",
+              "TRANSMUTATION"
+            ]
+          },
+          "castingTime": {
+            "type": "string",
+            "description": "casting time"
+          },
+          "spellRange": {
+            "type": "string",
+            "description": "range"
+          },
+          "duration": {
+            "type": "string",
+            "description": "duration"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "VERBAL",
+                "SOMATIC",
+                "MATERIAL"
+              ]
+            },
+            "description": "components"
+          },
+          "higherLevels": {
+            "type": "string",
+            "description": "description of what the spell does when cast at higher levels"
+          }
+        },
+        "required": [
+          "name",
+          "school",
+          "level",
+          "spellRange",
+          "castingTime",
+          "duration",
+          "description",
+          "components"
+        ]
+      },
+      "FeatRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          }
+        },
+        "required": [
+          "name",
+          "description"
+        ]
+      },
+      "RaceRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "description": {
+            "type": "string",
+            "description": "description"
+          },
+          "abilityScoreIncreases": {
+            "$ref": "#/components/schemas/Abillities",
+            "description": "ability score increases"
+          },
+          "age": {
+            "type": "string",
+            "description": "age"
+          },
+          "alignment": {
+            "type": "string",
+            "description": "alignment"
+          },
+          "size": {
+            "type": "string",
+            "description": "size"
+          },
+          "speed": {
+            "type": "string",
+            "description": "speed"
+          },
+          "feats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FeatRequest"
+            },
+            "description": "feats"
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "languages"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "abilityScoreIncreases",
+          "age",
+          "alignment",
+          "size",
+          "speed",
+          "feats",
+          "languages"
+        ]
+      },
+      "Abillities": {
+        "type": "object",
+        "properties": {
+          "strength": {
+            "type": "integer",
+            "description": "strength"
+          },
+          "dexterity": {
+            "type": "integer",
+            "description": "dexterity"
+          },
+          "constitution": {
+            "type": "integer",
+            "description": "constitution"
+          },
+          "intelligence": {
+            "type": "integer",
+            "description": "intelligence"
+          },
+          "wisdom": {
+            "type": "integer",
+            "description": "wisdom"
+          },
+          "charisma": {
+            "type": "integer",
+            "description": "charisma"
+          }
+        },
+        "required": [
+          "strength",
+          "dexterity",
+          "constitution",
+          "intelligence",
+          "wisdom",
+          "charisma"
+        ]
+      }
+    },
+    "securitySchemes": {}
+  },
+  "servers": []
+}
