@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="DiffGenerationConfig">
-    <option name="sourceModelValue" value="character-generator.main:entityManagerFactory" />
-    <option name="targetDbValue" value="2af78dcd-e5b5-40e5-9702-256c24697212" />
-  </component>
-</project>
