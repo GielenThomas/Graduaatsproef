@@ -6,4 +6,8 @@ databaseChangeLog:
   - include:
       file: db/changelog/tables/race.yaml
   - include:
-      file: db/changelog/tables/users.yaml
+      file: db/changelog/tables/user.yaml
+  - include:
+      file: db/changelog/tables/Character.yaml
+  - include:
+      file: db/changelog/tables/character_class.yaml
