@@ -35,6 +35,7 @@ public class SpellService {
         public Optional<Spell> updateSpell(UUID id, Spell spell){
         return spellRepository.findById(id).map(existingSpell -> {
             Spell updatedSpell = existingSpell.toBuilder()
+                    .id(id)
                     .name(spell.getName() != null ? spell.getName() : existingSpell.getName())
                     .level(spell.getLevel() != null ? spell.getLevel() : existingSpell.getLevel())
                     .school(spell.getSchool() != null ? spell.getSchool() : existingSpell.getSchool())

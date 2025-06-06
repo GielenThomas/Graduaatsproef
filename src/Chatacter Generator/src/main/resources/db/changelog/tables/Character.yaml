@@ -19,6 +19,10 @@ databaseChangeLog:
                   name: race_id
                   type: char(36)
               - column:
+                  name: user_id
+                  type: char(36)
+
+              - column:
                   name: character_class_id
                   type: char(36)
               - column:
@@ -133,4 +137,11 @@ databaseChangeLog:
             baseColumnNames: character_class_id
             constraintName: fk_character_class
             referencedTableName: character_class
+            referencedColumnNames: id
+
+        - addForeignKeyConstraint:
+            baseTableName: character
+            baseColumnNames: user_id
+            constraintName: fk_character_user
+            referencedTableName: user
             referencedColumnNames: id

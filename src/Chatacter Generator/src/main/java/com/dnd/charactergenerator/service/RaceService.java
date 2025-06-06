@@ -32,6 +32,7 @@ public class RaceService {
     public Optional<Race> updateRace(UUID id, Race race) {
         return raceRepository.findById(id).map(existingRace -> {
             Race updatedRace = existingRace.toBuilder()
+                    .id(id)
                     .name(race.getName() != null ? race.getName() : existingRace.getName())
                     .description(race.getDescription() != null ? race.getDescription() : existingRace.getDescription())
                     .abilityScoreIncreases(race.getAbilityScoreIncreases() != null ? race.getAbilityScoreIncreases() : existingRace.getAbilityScoreIncreases())
