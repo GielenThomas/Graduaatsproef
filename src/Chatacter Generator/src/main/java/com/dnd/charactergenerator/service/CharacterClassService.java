@@ -33,14 +33,8 @@ public class CharacterClassService {
     }
 
     public Optional<CharacterClass> updateClass(UUID id, CharacterClass characterClass) {
-        return characterClassRepository.findById(id).map(existingClass -> {
-            CharacterClass updatedClass = existingClass.toBuilder()
-                    .id(id)
-                    .name(characterClass.getName())
-                    .hitDie(characterClass.getHitDie())
-                    .proficiencies(characterClass.getProficiencies() != null ? characterClass.getProficiencies() : null)
-                    .build();
-            return characterClassRepository.save(updatedClass);
-        });
+        characterClass.setId(id);
+        characterClassRepository.save(characterClass);
+        return Optional.of(characterClass);
     }
 }

@@ -27,7 +27,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -44,14 +46,18 @@
               "schema": {
                 "$ref": "#/components/schemas/SpellRequest"
               },
-              "examples": {}
+              "examples": {
+
+              }
             }
           }
         },
         "responses": {
           "201": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -84,7 +90,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -108,7 +116,9 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -135,7 +145,9 @@
               "schema": {
                 "$ref": "#/components/schemas/SpellRequest"
               },
-              "examples": {}
+              "examples": {
+
+              }
             }
           }
         },
@@ -149,7 +161,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -175,7 +189,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -192,14 +208,18 @@
               "schema": {
                 "$ref": "#/components/schemas/FeatRequest"
               },
-              "examples": {}
+              "examples": {
+
+              }
             }
           }
         },
         "responses": {
           "201": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -232,7 +252,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -256,7 +278,9 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -283,7 +307,9 @@
               "schema": {
                 "$ref": "#/components/schemas/RaceRequest"
               },
-              "examples": {}
+              "examples": {
+
+              }
             }
           }
         },
@@ -297,7 +323,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -330,7 +358,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -354,7 +384,9 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -380,7 +412,9 @@
                 }
               }
             },
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -397,14 +431,322 @@
               "schema": {
                 "$ref": "#/components/schemas/RaceRequest"
               },
-              "examples": {}
+              "examples": {
+
+              }
             }
           }
         },
         "responses": {
           "201": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/login": {
+      "get": {
+        "summary": "Login",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "description": "username"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "password"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              },
+              "examples": {
+
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "token"
+                  ]
+                }
+              }
+            },
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/register": {
+      "get": {
+        "summary": "Register",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              },
+              "examples": {
+
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+
+                  }
+                }
+              }
+            },
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/classes": {
+      "get": {
+        "summary": "GetClasses",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CharacterClassResponse",
+                    "description": "character class "
+                  }
+                }
+              }
+            },
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      },
+      "post": {
+        "summary": "CreateClass",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "hitDie": {
+                    "type": "integer",
+                    "description": "hit die"
+                  },
+                  "proficiencies": {
+                    "type": "string",
+                    "description": "proficiencies"
+                  }
+                },
+                "required": [
+                  "name",
+                  "hitDie",
+                  "proficiencies"
+                ]
+              },
+              "examples": {
+
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+
+                  }
+                }
+              }
+            },
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/classes/{id}": {
+      "get": {
+        "summary": "GetClass",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharacterClassResponse",
+                  "description": "character class "
+                }
+              }
+            },
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      },
+      "delete": {
+        "summary": "DeleteClass",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {
+
+            }
+          }
+        },
+        "security": []
+      },
+      "put": {
+        "summary": "UpdateClass",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "name"
+                  },
+                  "hitDie": {
+                    "type": "integer",
+                    "description": "hit die"
+                  },
+                  "proficiencies": {
+                    "type": "string",
+                    "description": "proficiencies"
+                  }
+                },
+                "required": [
+                  "name",
+                  "hitDie",
+                  "proficiencies"
+                ]
+              },
+              "examples": {
+
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {
+
+            }
           }
         },
         "security": []
@@ -573,6 +915,124 @@
           "id"
         ]
       },
+      "CharacterResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "race": {
+            "$ref": "#/components/schemas/RaceResponse"
+          },
+          "characterClass": {
+            "$ref": "#/components/schemas/CharacterClassResponse",
+            "description": "character class "
+          },
+          "level": {
+            "type": "integer"
+          },
+          "background": {
+            "type": "string",
+            "description": "background"
+          },
+          "alignment": {
+            "type": "string",
+            "description": "alignment"
+          },
+          "xp": {
+            "type": "integer",
+            "description": "xp"
+          },
+          "abilities": {
+            "$ref": "#/components/schemas/Abillities",
+            "description": "ability score increases"
+          },
+          "skills": {
+            "$ref": "#/components/schemas/Skills",
+            "description": "skills"
+          },
+          "armorClass": {
+            "type": "integer",
+            "description": "armor class"
+          },
+          "speed": {
+            "type": "integer",
+            "description": "speed"
+          },
+          "maxHealth": {
+            "type": "integer",
+            "description": "maximum health"
+          },
+          "currentHealth": {
+            "type": "integer",
+            "description": "current health"
+          },
+          "spells": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SpellResponse"
+            },
+            "description": "spells"
+          },
+          "feats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FeatResponse"
+            },
+            "description": "feats"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "race",
+          "characterClass",
+          "level",
+          "background",
+          "alignment",
+          "xp",
+          "abilities",
+          "skills",
+          "armorClass",
+          "speed",
+          "maxHealth",
+          "currentHealth",
+          "spells",
+          "feats"
+        ]
+      },
+      "CharacterClassResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "hitDie": {
+            "type": "integer",
+            "description": "hit die"
+          },
+          "proficiencies": {
+            "type": "string",
+            "description": "proficiencies"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "hitDie",
+          "proficiencies"
+        ]
+      },
       "SpellRequest": {
         "type": "object",
         "properties": {
@@ -693,9 +1153,9 @@
           "feats": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/FeatRequest"
+              "type": "string"
             },
-            "description": "feats"
+            "description": "feat ids"
           },
           "languages": {
             "type": "array",
@@ -715,6 +1175,45 @@
           "speed",
           "feats",
           "languages"
+        ]
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "username"
+          },
+          "password": {
+            "type": "string",
+            "description": "password"
+          }
+        },
+        "required": [
+          "username",
+          "password"
+        ]
+      },
+      "CharacterClassRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "hitDie": {
+            "type": "integer",
+            "description": "hit die"
+          },
+          "proficiencies": {
+            "type": "string",
+            "description": "proficiencies"
+          }
+        },
+        "required": [
+          "name",
+          "hitDie",
+          "proficiencies"
         ]
       },
       "Abillities": {
@@ -753,9 +1252,108 @@
           "wisdom",
           "charisma"
         ]
+      },
+      "Skills": {
+        "type": "object",
+        "properties": {
+          "acrobatics": {
+            "type": "integer",
+            "description": "acrobatics"
+          },
+          "animalHandling": {
+            "type": "integer",
+            "description": "animal handling"
+          },
+          "arcana": {
+            "type": "integer",
+            "description": "arcana"
+          },
+          "athletics": {
+            "type": "integer",
+            "description": "athletics"
+          },
+          "deception": {
+            "type": "integer",
+            "description": "deception"
+          },
+          "history": {
+            "type": "integer",
+            "description": "history"
+          },
+          "insight": {
+            "type": "integer",
+            "description": "insight"
+          },
+          "intimidation": {
+            "type": "integer",
+            "description": "intimidation"
+          },
+          "investigation": {
+            "type": "integer",
+            "description": "investigation"
+          },
+          "medicine": {
+            "type": "integer",
+            "description": "medicine"
+          },
+          "nature": {
+            "type": "integer",
+            "description": "nature"
+          },
+          "perception": {
+            "type": "integer",
+            "description": "perception"
+          },
+          "performance": {
+            "type": "integer",
+            "description": "performance"
+          },
+          "persuasion": {
+            "type": "integer",
+            "description": "persuasion"
+          },
+          "religion": {
+            "type": "integer",
+            "description": "religion"
+          },
+          "sleightOfHand": {
+            "type": "integer",
+            "description": "sleight of hand"
+          },
+          "stealth": {
+            "type": "integer",
+            "description": "stealth"
+          },
+          "survival": {
+            "type": "integer",
+            "description": "survival"
+          }
+        },
+        "required": [
+          "acrobatics",
+          "animalHandling",
+          "arcana",
+          "athletics",
+          "deception",
+          "history",
+          "insight",
+          "intimidation",
+          "investigation",
+          "medicine",
+          "nature",
+          "perception",
+          "performance",
+          "persuasion",
+          "religion",
+          "sleightOfHand",
+          "stealth",
+          "survival"
+        ]
       }
     },
-    "securitySchemes": {}
+    "securitySchemes": {
+
+    }
   },
   "servers": []
 }

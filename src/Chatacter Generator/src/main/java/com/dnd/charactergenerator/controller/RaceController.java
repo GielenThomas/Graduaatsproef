@@ -29,7 +29,7 @@ public class RaceController implements RacesApi {
 
     @Override
     public ResponseEntity<List<RaceResponse>> racesGet() {
-        List<RaceResponse> races = raceService.getAllRaces().stream().map(raceMapper::toraceResponse).toList();
+        List<RaceResponse> races = raceService.getAllRaces().stream().map(raceMapper::toRaceResponse).toList();
         return new ResponseEntity<>(races, HttpStatus.OK);
     }
 
@@ -43,7 +43,7 @@ public class RaceController implements RacesApi {
     @Override
     public ResponseEntity<RaceResponse> racesIdGet(String id) {
         Optional<Race> race = raceService.getRaceById(UUID.fromString(id));
-        return race.map(e -> new ResponseEntity<>(raceMapper.toraceResponse(e), HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+        return race.map(e -> new ResponseEntity<>(raceMapper.toRaceResponse(e), HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @Override

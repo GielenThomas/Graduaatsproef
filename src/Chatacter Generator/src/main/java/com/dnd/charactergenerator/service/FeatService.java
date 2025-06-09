@@ -31,13 +31,8 @@ public class FeatService {
     }
 
     public Optional<Feat> updateFeat(UUID id, Feat feat) {
-        return featRepository.findById(id).map(existingFeat -> {
-            Feat updatedFeat = existingFeat.toBuilder()
-                    .id(id)
-                    .name(feat.getName() != null ? feat.getName() : existingFeat.getName())
-                    .description(feat.getDescription() != null ? feat.getDescription() : existingFeat.getDescription())
-                    .build();
-            return featRepository.save(updatedFeat);
-        });
+        feat.setId(id);
+        featRepository.save(feat);
+        return Optional.of(feat);
     }
 }

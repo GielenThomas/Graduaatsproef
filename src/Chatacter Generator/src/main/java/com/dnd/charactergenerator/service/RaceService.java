@@ -30,20 +30,8 @@ public class RaceService {
     }
 
     public Optional<Race> updateRace(UUID id, Race race) {
-        return raceRepository.findById(id).map(existingRace -> {
-            Race updatedRace = existingRace.toBuilder()
-                    .id(id)
-                    .name(race.getName() != null ? race.getName() : existingRace.getName())
-                    .description(race.getDescription() != null ? race.getDescription() : existingRace.getDescription())
-                    .abilityScoreIncreases(race.getAbilityScoreIncreases() != null ? race.getAbilityScoreIncreases() : existingRace.getAbilityScoreIncreases())
-                    .age(race.getAge() != null ? race.getAge() : existingRace.getAge())
-                    .alignment(race.getAlignment() != null ? race.getAlignment() : existingRace.getAlignment())
-                    .size(race.getSize() != null ? race.getSize() : existingRace.getSize())
-                    .speed(race.getSpeed() != null ? race.getSpeed() : existingRace.getSpeed())
-                    .feats(race.getFeats() != null ? race.getFeats() : existingRace.getFeats())
-                    .languages(race.getLanguages() != null ? race.getLanguages() : existingRace.getLanguages())
-                    .build();
-            return raceRepository.save(updatedRace);
-        });
+        race.setId(id);
+        raceRepository.save(race);
+        return Optional.of(race);
     }
 }
