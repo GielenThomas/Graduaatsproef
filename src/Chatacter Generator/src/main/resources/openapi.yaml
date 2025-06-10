@@ -27,9 +27,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -46,18 +44,14 @@
               "schema": {
                 "$ref": "#/components/schemas/SpellRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
         "responses": {
           "201": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -90,9 +84,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -116,9 +108,7 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -145,9 +135,7 @@
               "schema": {
                 "$ref": "#/components/schemas/SpellRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
@@ -161,9 +149,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -189,9 +175,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -208,18 +192,14 @@
               "schema": {
                 "$ref": "#/components/schemas/FeatRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
         "responses": {
           "201": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -252,9 +232,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -278,9 +256,7 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -307,9 +283,7 @@
               "schema": {
                 "$ref": "#/components/schemas/RaceRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
@@ -323,9 +297,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -358,9 +330,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -384,9 +354,7 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -412,9 +380,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -431,18 +397,14 @@
               "schema": {
                 "$ref": "#/components/schemas/RaceRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
         "responses": {
           "201": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -475,9 +437,7 @@
                   "password"
                 ]
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
@@ -499,9 +459,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -520,9 +478,7 @@
               "schema": {
                 "$ref": "#/components/schemas/LoginRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
@@ -533,15 +489,11 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "properties": {
-
-                  }
+                  "properties": {}
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -568,9 +520,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -585,49 +535,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "description": "name"
-                  },
-                  "hitDie": {
-                    "type": "integer",
-                    "description": "hit die"
-                  },
-                  "proficiencies": {
-                    "type": "string",
-                    "description": "proficiencies"
-                  }
-                },
-                "required": [
-                  "name",
-                  "hitDie",
-                  "proficiencies"
-                ]
+                "$ref": "#/components/schemas/CharacterClassRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
         "responses": {
-          "200": {
+          "201": {
             "description": "",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "properties": {
-
-                  }
+                  "properties": {}
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -661,9 +586,7 @@
                 }
               }
             },
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -687,9 +610,7 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {
-
-            }
+            "headers": {}
           }
         },
         "security": []
@@ -714,39 +635,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "description": "name"
-                  },
-                  "hitDie": {
-                    "type": "integer",
-                    "description": "hit die"
-                  },
-                  "proficiencies": {
-                    "type": "string",
-                    "description": "proficiencies"
-                  }
-                },
-                "required": [
-                  "name",
-                  "hitDie",
-                  "proficiencies"
-                ]
+                "$ref": "#/components/schemas/CharacterClassRequest"
               },
-              "examples": {
-
-              }
+              "examples": {}
             }
           }
         },
         "responses": {
           "200": {
             "description": "",
-            "headers": {
-
-            }
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharacterClassResponse",
+                  "description": "character class "
+                }
+              }
+            },
+            "headers": {}
           }
         },
         "security": []
@@ -1351,9 +1257,7 @@
         ]
       }
     },
-    "securitySchemes": {
-
-    }
+    "securitySchemes": {}
   },
   "servers": []
 }
