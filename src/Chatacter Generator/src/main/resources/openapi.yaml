@@ -411,7 +411,7 @@
       }
     },
     "/login": {
-      "get": {
+      "post": {
         "summary": "Login",
         "deprecated": false,
         "description": "",
@@ -421,21 +421,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "username": {
-                    "type": "string",
-                    "description": "username"
-                  },
-                  "password": {
-                    "type": "string",
-                    "description": "password"
-                  }
-                },
-                "required": [
-                  "username",
-                  "password"
-                ]
+                "$ref": "#/components/schemas/LoginRequest"
               },
               "examples": {}
             }
@@ -466,7 +452,7 @@
       }
     },
     "/register": {
-      "get": {
+      "post": {
         "summary": "Register",
         "deprecated": false,
         "description": "",
