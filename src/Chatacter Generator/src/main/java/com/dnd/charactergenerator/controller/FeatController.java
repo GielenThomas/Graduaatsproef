@@ -47,8 +47,8 @@ public class FeatController implements FeatsApi {
         return feat.map(e -> new ResponseEntity<>(featMapper.toFeatResponse(e),HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    @Secured("ROLE_ADMIN")
     @Override
+    @Secured("ROLE_ADMIN")
     public ResponseEntity<FeatResponse> featsIdPut(String id, FeatRequest featRequest) {
         Optional<Feat> feat = featService.updateFeat(UUID.fromString(id),featMapper.toFeat(featRequest));
         return feat.map(e -> new ResponseEntity<>(featMapper.toFeatResponse(e),HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));

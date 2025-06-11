@@ -262,7 +262,7 @@
         "security": []
       },
       "put": {
-        "summary": "UpdateRace",
+        "summary": "UpdateFeat",
         "deprecated": false,
         "description": "",
         "tags": [],
@@ -281,7 +281,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RaceRequest"
+                "$ref": "#/components/schemas/FeatRequest"
               },
               "examples": {}
             }
@@ -293,7 +293,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/RaceResponse"
+                  "$ref": "#/components/schemas/FeatResponse"
                 }
               }
             },
@@ -354,6 +354,47 @@
         "responses": {
           "200": {
             "description": "",
+            "headers": {}
+          }
+        },
+        "security": []
+      },
+      "put": {
+        "summary": "UpdateRace",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RaceRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RaceResponse"
+                }
+              }
+            },
             "headers": {}
           }
         },
@@ -433,15 +474,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {
-                    "token": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "token"
-                  ]
+                  "type": "string"
                 }
               }
             },
@@ -914,7 +947,10 @@
             "description": "hit die"
           },
           "proficiencies": {
-            "type": "string",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
             "description": "proficiencies"
           }
         },
@@ -1098,7 +1134,10 @@
             "description": "hit die"
           },
           "proficiencies": {
-            "type": "string",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
             "description": "proficiencies"
           }
         },

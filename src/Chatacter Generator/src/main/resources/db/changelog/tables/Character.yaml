@@ -16,14 +16,14 @@ databaseChangeLog:
                   name: name
                   type: varchar(255)
               - column:
-                  name: race_id
+                  name: race
                   type: char(36)
               - column:
                   name: user_id
                   type: char(36)
 
               - column:
-                  name: character_class_id
+                  name: character_class
                   type: char(36)
               - column:
                   name: level
@@ -124,20 +124,9 @@ databaseChangeLog:
               - column:
                   name: current_health
                   type: int
-
-        - addForeignKeyConstraint:
-            baseTableName: character
-            baseColumnNames: race_id
-            constraintName: fk_character_race
-            referencedTableName: race
-            referencedColumnNames: id
-
-        - addForeignKeyConstraint:
-            baseTableName: character
-            baseColumnNames: character_class_id
-            constraintName: fk_character_class
-            referencedTableName: character_class
-            referencedColumnNames: id
+              - column:
+                  name: hit_die
+                  type: int
 
         - addForeignKeyConstraint:
             baseTableName: character

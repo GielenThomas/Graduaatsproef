@@ -1,7 +1,7 @@
 databaseChangeLog:
   # 1. Create Race Table with Embedded Abilities Fields
   - changeSet:
-      id: 1
+      id: create-race-table
       author: Thomas Gielen
       changes:
         - createTable:
@@ -76,7 +76,7 @@ databaseChangeLog:
 
   # 2. Create Many-to-Many Table (race_feats)
   - changeSet:
-      id: 2
+      id: create-race_feats-table
       author: Thomas Gielen
       changes:
         - createTable:
@@ -107,7 +107,7 @@ databaseChangeLog:
 
   # 3. Create ElementCollection Table (race_languages)
   - changeSet:
-      id: 3
+      id: create race_languages-table
       author: Thomas Gielen
       changes:
         - createTable:

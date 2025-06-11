@@ -1,4 +1,4 @@
-package com.dnd.charactergenerator.util;
+package com.dnd.charactergenerator.auth;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

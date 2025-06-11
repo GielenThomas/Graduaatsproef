@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: 1
+      id: create-feat-table
       author: Thomas Gielen
       changes:
         - createTable:

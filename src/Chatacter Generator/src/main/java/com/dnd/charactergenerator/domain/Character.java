@@ -1,10 +1,7 @@
 package com.dnd.charactergenerator.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -22,10 +19,8 @@ public class Character {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String name;
-    @ManyToOne
-    private Race race;
-    @OneToOne
-    private CharacterClass characterClass;
+    private String race;
+    private String characterClass;
     private int level;
     private String background;
     private String alignment;
@@ -36,13 +31,16 @@ public class Character {
     private int armorClass;
     private int speed;
 
-    private int maxHealth;
     private int currentHealth;
+    private int maxHealth;
+    private int hitDie;
 
     @OneToMany
     private List<Spell> spells;
 
     @OneToMany
     private List<Feat> feats;
+
+
 
 }

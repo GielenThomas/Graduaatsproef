@@ -9,17 +9,16 @@ import org.mapstruct.AfterMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.UUID;
 
 @Mapper(componentModel = "spring", uses = {FeatMapper.class})
 public abstract class RaceMapper {
-    private final FeatRepository featRepository;
-    protected RaceMapper(FeatRepository featRepository) {
-        this.featRepository = featRepository;
 
-    }
+    @Autowired
+    protected FeatRepository featRepository;
 
     @Mapping(target = "feats", ignore = true)
     public abstract Race toRace(RaceRequest raceRequest);
