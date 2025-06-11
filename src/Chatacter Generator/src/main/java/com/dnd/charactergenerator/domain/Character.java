@@ -21,10 +21,10 @@ public class Character {
     private String name;
     private String race;
     private String characterClass;
-    private int level;
+    private int level = 1;
     private String background;
     private String alignment;
-    private int xp;
+    private int xp = 0;
     private Abilities abilities;
     private Skills skills;
 

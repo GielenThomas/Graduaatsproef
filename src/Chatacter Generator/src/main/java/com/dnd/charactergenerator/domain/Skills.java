@@ -12,23 +12,23 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Skills {
-    private int acrobatics;
-    private int animalHandling;
-    private int arcana;
-    private int athletics;
-    private int deception;
-    private int history;
-    private int insight;
-    private int intimidation;
-    private int investigation;
-    private int medicine;
-    private int nature;
-    private int perception;
-    private int performance;
-    private int persuasion;
-    private int religion;
-    private int sleightOfHand;
-    private int stealth;
-    private int survival;
+    private int acrobatics = 0;
+    private int animalHandling = 0;
+    private int arcana = 0;
+    private int athletics = 0;
+    private int deception = 0;
+    private int history = 0;
+    private int insight = 0;
+    private int intimidation = 0;
+    private int investigation = 0;
+    private int medicine = 0;
+    private int nature = 0;
+    private int perception = 0;
+    private int performance = 0;
+    private int persuasion = 0;
+    private int religion = 0;
+    private int sleightOfHand = 0;
+    private int stealth = 0;
+    private int survival = 0;
 
 }
