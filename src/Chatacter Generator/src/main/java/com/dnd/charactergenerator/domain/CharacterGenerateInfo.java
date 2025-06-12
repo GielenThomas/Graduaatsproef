@@ -16,5 +16,5 @@ public class CharacterGenerateInfo {
     String background;
     String alignment;
     Abilities abilities;
-    List<UUID> spells;
+    List<UUID> spellIds;
 }

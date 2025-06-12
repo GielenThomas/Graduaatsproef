@@ -30,10 +30,7 @@ public class User {
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "roles")
     private Set<String> roles = new HashSet<>();
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Character> characters;
 
-    public void addCharacter(Character character) {
-        characters.add(character);
-    }
 }

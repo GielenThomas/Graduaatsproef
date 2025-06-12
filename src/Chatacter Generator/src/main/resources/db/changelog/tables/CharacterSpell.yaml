@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-character-spell-join-table
+      author: Thomas Gielen
+      changes:
+        - createTable:
+            tableName: character_spell
+            columns:
+              - column:
+                  name: character_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: spell_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+
+        - addPrimaryKey:
+            tableName: character_spell
+            columnNames: character_id, spell_id
+            constraintName: pk_character_spell
+
+        - addForeignKeyConstraint:
+            baseTableName: character_spell
+            baseColumnNames: character_id
+            referencedTableName: character
+            referencedColumnNames: id
+            constraintName: fk_character_spell_character
+
+        - addForeignKeyConstraint:
+            baseTableName: character_spell
+            baseColumnNames: spell_id
+            referencedTableName: spell
+            referencedColumnNames: id
+            constraintName: fk_character_spell_spell

@@ -34,8 +34,10 @@ public class FeatController implements FeatsApi {
         return new ResponseEntity<>(feats, HttpStatus.OK);
     }
 
-    @Override
+
+
     @Secured("ROLE_ADMIN")
+    @Override
     public ResponseEntity<Void> featsIdDelete(String id) {
        featService.deleteFeat(UUID.fromString(id));
        return new ResponseEntity<>(HttpStatus.OK);

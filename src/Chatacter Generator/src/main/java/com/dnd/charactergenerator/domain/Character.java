@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Table(name = "`Character`")
 @Builder(toBuilder = true)
 @NoArgsConstructor
 @AllArgsConstructor
@@ -40,11 +41,24 @@ public class Character {
     private int maxHealth;
     private int hitDie;
 
-    @OneToMany
+    @ManyToMany
+    @JoinTable(
+            name = "character_spell",
+            joinColumns = @JoinColumn(name = "character_id"),
+            inverseJoinColumns = @JoinColumn(name = "spell_id")
+    )
     private List<Spell> spells;
 
-    @OneToMany
+    @ManyToMany
+    @JoinTable(
+            name = "character_feat",
+            joinColumns = @JoinColumn(name = "character_id"),
+            inverseJoinColumns = @JoinColumn(name = "feat_id")
+    )
     private List<Feat> feats;
+    @ManyToOne @JoinColumn(name="user_id")
+    User user;
+
 
 
 

@@ -50,7 +50,7 @@ public class RaceController implements RacesApi {
     @Secured("ROLE_ADMIN")
     public ResponseEntity<Void> racesPost(RaceRequest raceRequest) {
         raceService.createRace(raceMapper.toRace(raceRequest));
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 

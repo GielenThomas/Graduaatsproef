@@ -9,4 +9,10 @@ databaseChangeLog:
       file: db/changelog/tables/user.yaml
   - include:
       file: db/changelog/tables/Character.yaml
+  - include:
+      file: db/changelog/tables/CharacterClass.yaml
+  - include:
+      file: db/changelog/tables/CharacterSpell.yaml
+  - include:
+      file: db/changelog/tables/CharacterFeat.yaml
 

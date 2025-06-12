@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-character-feat-join-table
+      author: yourname
+      changes:
+        - createTable:
+            tableName: character_feat
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: character_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: feat_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: character_feat
+            baseColumnNames: character_id
+            referencedTableName: character
+            referencedColumnNames: id
+            constraintName: fk_character_feat_character
+
+        - addForeignKeyConstraint:
+            baseTableName: character_feat
+            baseColumnNames: feat_id
+            referencedTableName: feat
+            referencedColumnNames: id
+            constraintName: fk_character_feat_feat
