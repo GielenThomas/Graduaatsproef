@@ -505,7 +505,7 @@
           "200": {
             "description": "",
             "content": {
-              "application/json": {
+              "*/*": {
                 "schema": {
                   "type": "object",
                   "properties": {}
@@ -533,8 +533,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CharacterClassResponse",
-                    "description": "character class "
+                    "$ref": "#/components/schemas/CharacterClassResponse"
                   }
                 }
               }
@@ -600,8 +599,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CharacterClassResponse",
-                  "description": "character class "
+                  "$ref": "#/components/schemas/CharacterClassResponse"
                 }
               }
             },
@@ -666,11 +664,95 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CharacterClassResponse",
-                  "description": "character class "
+                  "$ref": "#/components/schemas/CharacterClassResponse"
                 }
               }
             },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/characters": {
+      "get": {
+        "summary": "GetCharacters",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CharacterResponse"
+                  }
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/characters/{id}": {
+      "get": {
+        "summary": "GetCharacter",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CharacterResponse"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/characters/generate": {
+      "post": {
+        "summary": "GenerateCharacter",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateCharacterRequest"
+              },
+              "examples": {}
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
             "headers": {}
           }
         },
@@ -852,10 +934,10 @@
             "description": "name"
           },
           "race": {
-            "$ref": "#/components/schemas/RaceResponse"
+            "type": "string"
           },
           "characterClass": {
-            "$ref": "#/components/schemas/CharacterClassResponse",
+            "type": "string",
             "description": "character class "
           },
           "level": {
@@ -893,6 +975,10 @@
             "type": "integer",
             "description": "maximum health"
           },
+          "hitDie": {
+            "type": "integer",
+            "description": "hit die"
+          },
           "currentHealth": {
             "type": "integer",
             "description": "current health"
@@ -928,7 +1014,8 @@
           "maxHealth",
           "currentHealth",
           "spells",
-          "feats"
+          "feats",
+          "hitDie"
         ]
       },
       "CharacterClassResponse": {
@@ -1145,6 +1232,43 @@
           "name",
           "hitDie",
           "proficiencies"
+        ]
+      },
+      "GenerateCharacterRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name"
+          },
+          "raceId": {
+            "type": "string",
+            "description": "race id"
+          },
+          "characterClassId": {
+            "type": "string",
+            "description": "class id"
+          },
+          "background": {
+            "type": "string",
+            "description": "background"
+          },
+          "alignment": {
+            "type": "string",
+            "description": "alignment"
+          },
+          "abilities": {
+            "$ref": "#/components/schemas/Abillities",
+            "description": "ability score increases"
+          }
+        },
+        "required": [
+          "name",
+          "raceId",
+          "characterClassId",
+          "background",
+          "alignment",
+          "abilities"
         ]
       },
       "Abillities": {

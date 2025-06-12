@@ -32,4 +32,8 @@ public class User {
     private Set<String> roles = new HashSet<>();
     @OneToMany
     private List<Character> characters;
+
+    public void addCharacter(Character character) {
+        characters.add(character);
+    }
 }
