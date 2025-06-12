@@ -20,11 +20,11 @@ public class Abilities {
     private int wisdom;
     private int charisma;
 
-    public int calculateModifier(int score) {
+    public static int calculateModifier(int score) {
         return (score - 10) / 2;
     }
 
-    public boolean isValidPointBuy() {
+    public void isValidPointBuy() {
 
             int totalPoints = 0;
             int[] scores = {strength, dexterity, constitution, intelligence, wisdom, charisma};
@@ -33,7 +33,7 @@ public class Abilities {
                 totalPoints += pointCost(score);
             }
 
-            return totalPoints <= 27;
+            if (totalPoints > 27) throw new IllegalArgumentException("Invalid ability points");
 
     }
 

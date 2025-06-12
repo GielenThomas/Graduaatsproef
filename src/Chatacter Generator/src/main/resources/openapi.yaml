@@ -875,7 +875,7 @@
             "description": "description"
           },
           "abilityScoreIncreases": {
-            "$ref": "#/components/schemas/Abillities",
+            "$ref": "#/components/schemas/Abilities",
             "description": "ability score increases"
           },
           "age": {
@@ -956,7 +956,7 @@
             "description": "xp"
           },
           "abilities": {
-            "$ref": "#/components/schemas/Abillities",
+            "$ref": "#/components/schemas/Abilities",
             "description": "ability score increases"
           },
           "skills": {
@@ -1146,7 +1146,7 @@
             "description": "description"
           },
           "abilityScoreIncreases": {
-            "$ref": "#/components/schemas/Abillities",
+            "$ref": "#/components/schemas/Abilities",
             "description": "ability score increases"
           },
           "age": {
@@ -1258,8 +1258,15 @@
             "description": "alignment"
           },
           "abilities": {
-            "$ref": "#/components/schemas/Abillities",
+            "$ref": "#/components/schemas/Abilities",
             "description": "ability score increases"
+          },
+          "spellIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "spell ids"
           }
         },
         "required": [
@@ -1268,10 +1275,11 @@
           "characterClassId",
           "background",
           "alignment",
-          "abilities"
+          "abilities",
+          "spellIds"
         ]
       },
-      "Abillities": {
+      "Abilities": {
         "type": "object",
         "properties": {
           "strength": {

@@ -14,6 +14,9 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 public class Character {
+    private static final int STARTING_LEVEL = 1;
+    private static final int STARTING_XP = 0;
+
     @Id
     @JdbcTypeCode(SqlTypes.CHAR)
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -21,15 +24,17 @@ public class Character {
     private String name;
     private String race;
     private String characterClass;
-    private int level = 1;
+    @Builder.Default
+    private int level = STARTING_LEVEL;
     private String background;
     private String alignment;
-    private int xp = 0;
+    @Builder.Default
+    private int xp = STARTING_XP;
     private Abilities abilities;
     private Skills skills;
 
     private int armorClass;
-    private int speed;
+    private String speed;
 
     private int currentHealth;
     private int maxHealth;

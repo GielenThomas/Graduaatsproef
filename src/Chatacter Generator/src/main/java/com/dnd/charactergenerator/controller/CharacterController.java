@@ -25,7 +25,7 @@ public class CharacterController implements CharactersApi {
     @Override
     @Secured("ROLE_USER")
     public ResponseEntity<Void> charactersGeneratePost(GenerateCharacterRequest generateCharacterRequest) {
-        characterService.generateCharacter(generateCharacterRequest);
+        characterService.generateCharacter(characterMapper.toCharacterGenerateInfo(generateCharacterRequest));
         return new ResponseEntity<>(HttpStatus.CREATED);
 
     }

@@ -117,7 +117,7 @@ databaseChangeLog:
                   type: int
               - column:
                   name: speed
-                  type: int
+                  type: char(36)
               - column:
                   name: max_health
                   type: int
