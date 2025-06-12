@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.5.30)  30 MAY 2025 14:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.5.30)  12 JUN 2025 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2187,17 +2187,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 4.
+(Font)              scaled to size 10.95116pt on input line 6.
 LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
-(Font)              scaled to size 7.88484pt on input line 4.
+(Font)              scaled to size 7.88484pt on input line 6.
 LaTeX Font Info:    Font shape `TU/FiraMathRegular(2)/m/n' will be
-(Font)              scaled to size 6.35167pt on input line 4.
+(Font)              scaled to size 6.35167pt on input line 6.
 LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 4.
+(Font)              scaled to size 10.94882pt on input line 6.
 LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
-(Font)              scaled to size 7.88315pt on input line 4.
+(Font)              scaled to size 7.88315pt on input line 6.
 LaTeX Font Info:    Font shape `TU/FiraMathRegular(3)/m/n' will be
-(Font)              scaled to size 6.35031pt on input line 4.
+(Font)              scaled to size 6.35031pt on input line 6.
 )
 \tf@lof=\write8
 \openout8 = `GielenThomasBP.lof'.
@@ -2551,7 +2551,7 @@ I changed this one to zero.
 \pydata@fh@0=\write11
 \openout11 = `_3045BBEA7C7D8731EC37A2E87EA14392.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250530145027 3045BBEA7C7D8731EC37A2
+runsystem(latexminted config  --timestamp 20250612205451 3045BBEA7C7D8731EC37A2
 E87EA14392)...disabled (restricted).
 
 
@@ -2759,7 +2759,7 @@ l.79         \end{minted}
 A mathchar number must be between 0 and "7FFF.
 I changed this one to zero.
 
-) (conclusie.tex
+) (springBoot.tex
 
 [7
 
@@ -2772,14 +2772,567 @@ I changed this one to zero.
 [10]
 Hoofdstuk 5.
 
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 12.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.19     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.19     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.19     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27     \end{minted}
+                     
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.27     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.27     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.27     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+Overfull \hbox (247.9603pt too wide) in paragraph at lines 27--27
+\TU/FiraCode(0)/m/n/10.95 vice.generateCharacter(characterMapper.toCharacterGen
+erateInfo(generateCharacterRequest));|  
+ []
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.27     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.27     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.27     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+Overfull \hbox (12.67783pt too wide) in paragraph at lines 35--36
+\TU/Montserrat(1)/m/n/10.95 ponseklassen die automatisch gegenereerd zijn op ba
+sis van de OpenAPI-specificatie. 
+ []
+
+
 
 [11
 
-])
+]
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.42     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.42     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.42     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48     \end{minted}
+                     
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.48     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.48     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.48     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.48     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.48     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.48     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+Overfull \hbox (32.51558pt too wide) in paragraph at lines 55--56
+\TU/Montserrat(1)/m/n/10.95 Voor het modelleren van de domeinklassen is gebruik
+gemaakt van Jakarta EE-annotaties
+ []
+
+
 
 [12]
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.62     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
 
-LaTeX Warning: Empty bibliography on input line 174.
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.62     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.62     \begin{minted}{java}
+                             
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91     \end{minted}
+                     
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.91     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.91     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.91     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.91     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.91     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.91     \end{minted}
+                     
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+Overfull \hbox (20.26253pt too wide) in paragraph at lines 103--104
+\TU/Montserrat(1)/m/n/10.95 lerlaag lichtgewicht en gericht op het afhandelen v
+an HTTP-verzoeken en -antwoorden.
+ []
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.106     \begin{minted}{java}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.106     \begin{minted}{java}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.106     \begin{minted}{java}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119     \end{minted}
+                      
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.119     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.119     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.119     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.119     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.119     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.119     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.131     \begin{minted}{java}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.131     \begin{minted}{java}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.131     \begin{minted}{java}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134     \end{minted}
+                      
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.134     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.134     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.134     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.134     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.134     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.134     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+
+[13]
+
+[14]
+
+[15]
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.150     \begin{minted}{yaml}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.150     \begin{minted}{yaml}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.150     \begin{minted}{yaml}
+                              
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+
+! Package minted Error: Cannot highlight code (minted executable is unavailable
+ or disabled); attempting to typeset without highlighting.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175     \end{minted}
+                      
+(That was another \errmessage.)
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.175     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.175     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.175     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203031).
+<to be read again> 
+                   =
+l.175     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (4203026).
+<to be read again> 
+                   =
+l.175     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+! Extended mathchar used as mathchar (6300214).
+<to be read again> 
+                   =
+l.175     \end{minted}
+                      
+A mathchar number must be between 0 and "7FFF.
+I changed this one to zero.
+
+) (conclusie.tex
+
+[16]
+
+[17]
+Hoofdstuk 6.
+
+
+[18
+
+])
+
+[19]
+
+LaTeX Warning: Empty bibliography on input line 175.
 
 (GielenThomasBP.aux)
  ***********
@@ -2790,17 +3343,8 @@ L3 programming layer <2025-04-29>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `GielenThomasBP.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `GielenThomasBP.out':
-(rerunfilecheck)             Before: 5324618B6201EB8295C506F162450733;1989
-(rerunfilecheck)             After:  A2E8FD448D9C53855EA1A61B9997F27D;2125.
+Package rerunfilecheck Info: File `GielenThomasBP.out' has not changed.
+(rerunfilecheck)             Checksum: 693527E464068801ECE87B046D5A9E8C;3595.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                GielenThomasBP
@@ -2811,12 +3355,12 @@ Package logreq Info: Writing requests to 'GielenThomasBP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50130 strings out of 405039
- 1022108 string characters out of 5499318
- 2262789 words of memory out of 5000000
- 76051 multiletter control sequences out of 15000+600000
- 630672 words of font info for 110 fonts, out of 8000000 for 9000
+ 50167 strings out of 405039
+ 1023529 string characters out of 5499318
+ 2266792 words of memory out of 5000000
+ 76083 multiletter control sequences out of 15000+600000
+ 630688 words of font info for 112 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 110i,11n,131p,1314b,4151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,12n,131p,1314b,4151s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on GielenThomasBP.pdf (20 pages).
+Output written on GielenThomasBP.pdf (27 pages).

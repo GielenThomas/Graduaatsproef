@@ -31,6 +31,12 @@ public class CharacterController implements CharactersApi {
     }
 
     @Override
+    public ResponseEntity<Void> charactersIdDelete(String id) {
+        characterService.deleteCharacter(UUID.fromString(id));
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
     @Secured("ROLE_USER")
     public ResponseEntity<List<CharacterResponse>> charactersGet() {
         List<CharacterResponse> characters = characterService.getCharacters().stream().map(characterMapper::toCharacterResponse).toList();

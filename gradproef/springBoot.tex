@@ -1,0 +1,183 @@
+\chapter{Spring Boot}
+\label{ch:springboot}
+
+Om de ontwikkeling te versnellen en consistentie te garanderen tussen de documentatie en de implementatie, werd gebruikgemaakt van de door Apidog gegenereerde OpenAPI-specificatie. Deze specificatie werd vervolgens gebruikt om automatisch Java-klassen te genereren, zoals:
+\begin{itemize}
+    \item \textbf{Request- en response-DTO's}, gebaseerd op de schemas in de OpenAPI;
+    \item \textbf{Controllerinterfaces}, met methodesignatures die overeenkomen met de beschreven endpoints;
+\end{itemize}
+
+De gegenereerde klassen vormen de basis van de Spring Boot-implementatie. Op deze manier werd een documentation-first aanpak gevolgd, waarbij de documentatie leidend is voor de implementatie.
+
+\subsection{Implementatie van de controllers}
+
+De gegenereerde controllerinterfaces definiëren de API-endpoints en methodesignatures, maar bevatten nog geen concrete implementaties. Daarom zijn eigen controllerklassen geschreven die deze interfaces implementeren. 
+
+Deze implementatieklassen bevatten de businesslogica en roepen services aan om de gevraagde operaties uit te voeren, zoals het aanmaken of ophalen van Dungeons \& Dragons-personages. De \texttt{@Secured} controleerd of de gebruiker de juiste rol heeft om deze route aan te roepen.
+
+\begin{listing}
+    \begin{minted}{java}
+        @Override
+        @Secured("ROLE_USER")
+        public ResponseEntity<Void> charactersGeneratePost(GenerateCharacterRequest generateCharacterRequest) {
+            characterService.generateCharacter(characterMapper.toCharacterGenerateInfo(generateCharacterRequest));
+            return new ResponseEntity<>(HttpStatus.CREATED);
+            
+        }
+    \end{minted}
+    \caption[controllerExample]{Voorbeeld van de generateCharacter route in de CharacterController}
+\end{listing}
+
+Deze aanpak zorgt ervoor dat de contracten uit de OpenAPI-specificatie strikt gevolgd worden, terwijl er toch volledige controle is over de uitvoering van de functionaliteit. Hierdoor blijft de API consistent met de documentatie en kan de implementatie makkelijk onderhouden en uitgebreid worden.
+
+\subsection{DTO-transformatie met MapStruct in de controllerlaag}
+
+Om de communicatie tussen de API en de interne domeinlogica te stroomlijnen, worden Data Transfer Objects (DTO’s) gebruikt. Deze DTO’s zijn de request- en responseklassen die automatisch gegenereerd zijn op basis van de OpenAPI-specificatie.
+
+Voor het omzetten van deze DTO’s naar de domeinmodellen (en omgekeerd) wordt MapStruct ingezet. MapStruct genereert tijdens compile-tijd efficiënte en typeveilige mappers op basis van interface-definities, wat handmatig schrijfwerk vermindert en fouten voorkomt.
+
+Binnen de controllerlaag wordt MapStruct gebruikt om inkomende request-DTO’s te converteren naar domeinobjecten die vervolgens aan de servicelaag worden doorgegeven. Ook worden domeinobjecten terug omgezet naar response-DTO’s om aan de client te worden geretourneerd.
+
+\begin{listing}
+    \begin{minted}{java}
+        @Mapper(componentModel = "spring")
+        public interface CharacterMapper {
+            CharacterResponse toCharacterResponse(Character character);
+            CharacterGenerateInfo toCharacterGenerateInfo(GenerateCharacterRequest generateCharacterRequest);
+        }
+    \end{minted}
+    \caption[mapExample]{Voorbeeld van een MapStruct interface voor het mappen tussen DTO’s en domeinmodellen}
+\end{listing}
+Deze aanpak zorgt voor een duidelijke scheiding tussen API-modellen en domeinlogica, terwijl de code toch overzichtelijk en onderhoudbaar blijft.
+
+\subsection{Gebruik van Jakarta en Lombok in domeinmodellen}
+
+Voor het modelleren van de domeinklassen is gebruikgemaakt van Jakarta EE-annotaties en Lombok. 
+
+De Jakarta-annotaties, zoals \texttt{@Entity}, \texttt{@Id} en andere, worden toegepast om de domeinmodellen te verbinden met de onderliggende database en om validatieregels te definiëren. Dit maakt het mogelijk om de persistentie en validatie centraal in het domein te beheren.
+
+Lombok wordt ingezet om boilerplate-code te verminderen. Met annotaties zoals \texttt{@Getter}, \texttt{@Setter}, \texttt{@NoArgsConstructor} en \texttt{@AllArgsConstructor} worden automatisch de getters, setters, constructors en andere veelvoorkomende methoden gegenereerd tijdens compile-tijd. Dit zorgt voor een veel compactere en beter leesbare codebasis.
+
+\begin{listing}
+    \begin{minted}{java}
+        @Entity
+        @Table(name = "`Character`")
+        @Builder(toBuilder = true)
+        @NoArgsConstructor
+        @AllArgsConstructor
+        @Data
+        public class Character {
+            private static final int STARTING_LEVEL = 1;
+            private static final int STARTING_XP = 0;
+            
+            @Id
+            @JdbcTypeCode(SqlTypes.CHAR)
+            @GeneratedValue(strategy = GenerationType.UUID)
+            private UUID id;
+            private String name;
+            private String race;
+            private String characterClass;
+            @Builder.Default
+            private int level = STARTING_LEVEL;
+            private String background;
+            private String alignment;
+            @Builder.Default
+            private int xp = STARTING_XP;
+            private Abilities abilities;
+            private Skills skills;
+            
+            
+        }
+    \end{minted}
+    \caption[domainClassExample]{Een fragment van de  character domein classe}
+\end{listing}
+
+Door het gebruik van deze tools blijft de code overzichtelijk en wordt de ontwikkeling versneld, terwijl de functionaliteit en de structuur van het domein behouden blijven.
+
+\subsection{Servicelaag}
+
+De servicelaag vormt de kern van de applicatielogica en fungeert als tussenlaag tussen de controllerlaag en de domeinmodellen. Deze laag bevat de businessregels en verwerkt de logica die nodig is om de functionaliteiten van de API te realiseren.
+
+In deze laag worden de domeinmodellen gemanipuleerd en worden complexe bewerkingen uitgevoerd, zoals het valideren van gegevens, uitvoeren van berekeningen, en coördineren van verschillende onderdelen van de applicatie.
+
+Door de businesslogica in een aparte servicelaag onder te brengen, blijft de controllerlaag lichtgewicht en gericht op het afhandelen van HTTP-verzoeken en -antwoorden. Dit verhoogt de modulariteit en onderhoudbaarheid van de code.
+
+\begin{listing}
+    \begin{minted}{java}
+        public List<Character> getCharacters() {
+            User user = authUtil.getCurrentUser();
+            return user.getCharacters();
+        }
+        
+        public Character getCharacter(UUID characterId) {
+            User user = authUtil.getCurrentUser();
+            
+            return characterRepository.findById(characterId)
+            .filter(character -> user.getCharacters().contains(character))
+            .orElseThrow(() -> new AccessDeniedException("Character not found or does not belong to user"));
+        }
+    \end{minted}
+    \caption[serviceExample]{Een fragment van de  characterService}
+\end{listing}
+
+Deze gelaagde architectuur zorgt ervoor dat de applicatie overzichtelijk blijft en dat wijzigingen in de businesslogica beperkt blijven tot de servicelaag, zonder dat de controller- of domeinlaag aangepast hoeft te worden.
+
+\subsection{Repositorielaag}
+
+De repositorielaag is verantwoordelijk voor de communicatie met de database en het uitvoeren van CRUD-operaties (Create, Read, Update, Delete) op de domeinmodellen. Hiervoor is gebruikgemaakt van Java Persistence API (JPA), een standaard voor object-relational mapping in Java.
+
+Met JPA kunnen domeinobjecten eenvoudig worden opgeslagen, opgehaald en beheerd in een relationele database. Door gebruik te maken van Spring Data JPA zijn de repositoryinterfaces snel en efficiënt opgezet, waarbij standaard methoden zoals \texttt{save()}, \texttt{findById()} en \texttt{delete()} automatisch worden gegenereerd.
+\begin{listing}
+    \begin{minted}{java}
+        public interface CharacterRepository extends JpaRepository<Character, UUID> {
+        }
+    \end{minted}
+    \caption[RepositoryExample]{De CharacterRepository}
+\end{listing}
+
+
+Deze laag zorgt ervoor dat de servicelaag zich kan richten op de businesslogica, terwijl de details van data-opslag en databasecommunicatie worden afgehandeld door de repositorielaag. Dit draagt bij aan een duidelijke scheiding van verantwoordelijkheden binnen de applicatie.
+
+\subsection{Databasebeheer met Liquibase}
+
+Voor het beheer van de database en het uitvoeren van schemawijzigingen is gebruikgemaakt van Liquibase. Liquibase is een open-source tool die het mogelijk maakt om databaseversies en migraties op een gestructureerde en herhaalbare manier te beheren.
+
+Met behulp van changelog-bestanden, geschreven in YAML, worden wijzigingen in de database beschreven. Deze bestanden worden door Liquibase gelezen en toegepast, waardoor het opzetten, wijzigen en bijwerken van het databaseschema geautomatiseerd en gecontroleerd verloopt.
+
+Door Liquibase te integreren in het ontwikkelproces, kan het databaseschema consistent worden gehouden tussen verschillende ontwikkelomgevingen en productie, wat fouten en inconsistenties voorkomt.
+
+\begin{listing}
+    \begin{minted}{yaml}
+        databaseChangeLog:
+        - changeSet:
+        id: create-feat-table
+        author: Thomas Gielen
+        changes:
+        - createTable:
+        tableName: feat
+        columns:
+        - column:
+        name: id
+        type: UUID
+        constraints:
+        primaryKey: true
+        - column:
+        name: name
+        type: VARCHAR(255)
+        constraints:
+        nullable: false
+        - column:
+        name: description
+        type: VARCHAR(2000)
+        constraints:
+        nullable: true
+        
+    \end{minted}
+    \caption[LiquibaseExample]{Een fragment van een Liquibase changelog bestand}
+\end{listing}
+
+Deze aanpak maakt het mogelijk om databasewijzigingen veilig en traceerbaar door te voeren, wat de betrouwbaarheid en onderhoudbaarheid van het systeem ten goede komt.
+
+
+
+
